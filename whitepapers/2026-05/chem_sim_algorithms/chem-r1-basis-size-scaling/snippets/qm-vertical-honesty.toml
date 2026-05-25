@@ -1,0 +1,7 @@
+# Excerpt pattern — align with benchmarks/competitive/verticals.toml qm_dft row
+# Replace stub flags when import_chem_dft_smoke passes composable gates.
+
+[vertical.qm_dft]
+id = "qm_dft"
+implemented_smoke = false  # set true only when composable smoke is green
+honesty_note = "stub SCF energy — basis scaling study seed"

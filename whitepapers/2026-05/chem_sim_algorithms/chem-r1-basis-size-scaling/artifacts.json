@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "goal_id": "chem_sim_algorithms",
+  "agent": "numerics_researcher",
+  "run_id": "seed-chem-r1-2026-05-25",
+  "generated_at": "2026-05-25T12:00:00Z",
+  "slug": "chem-r1-basis-size-scaling",
+  "title": "QM stub SCF — basis-size cost/accuracy scaling (placeholder)",
+  "domains": ["scientific_computing", "hpc"],
+  "validity_grade": "study-only",
+  "status": "active",
+  "links": [
+    "lic/docs/ecosystem/sim-chem-research-backlog.md#chem-r1-basis-size-scaling"
+  ],
+  "markdown_path": "whitepapers/2026-05/chem_sim_algorithms/chem-r1-basis-size-scaling/README.md",
+  "snippets_dir": "whitepapers/2026-05/chem_sim_algorithms/chem-r1-basis-size-scaling/snippets"
+}

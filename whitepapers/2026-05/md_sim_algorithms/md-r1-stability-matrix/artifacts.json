@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "goal_id": "md_sim_algorithms",
+  "agent": "numerics_researcher",
+  "run_id": "seed-md-r1-2026-05-25",
+  "generated_at": "2026-05-25T12:00:00Z",
+  "slug": "md-r1-stability-matrix",
+  "title": "MD Lennard-Jones — CFL and neighbor-skin stability matrix (placeholder)",
+  "domains": ["scientific_computing", "hpc"],
+  "validity_grade": "study-only",
+  "status": "active",
+  "links": [
+    "lic/docs/ecosystem/sim-md-research-backlog.md#md-r1-stability-matrix",
+    "lic/docs/ecosystem/sim-algo-research-grading.md",
+    "https://li-langverse.github.io/benchmarks/"
+  ],
+  "markdown_path": "whitepapers/2026-05/md_sim_algorithms/md-r1-stability-matrix/README.md",
+  "snippets_dir": "whitepapers/2026-05/md_sim_algorithms/md-r1-stability-matrix/snippets"
+}

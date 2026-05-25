@@ -1,0 +1,27 @@
+version: 1
+updated_at: "2026-05-25T19:57:14Z"
+whitepapers:
+  - goal_id: chem_sim_algorithms
+    slug: chem-r1-basis-size-scaling
+    path: whitepapers/2026-05/chem_sim_algorithms/chem-r1-basis-size-scaling
+    title: "QM stub SCF — basis-size cost/accuracy scaling (placeholder)"
+    agent: numerics_researcher
+    run_id: seed-chem-r1-2026-05-25
+    generated_at: "2026-05-25T12:00:00Z"
+    domains: [scientific_computing, hpc]
+    validity_grade: study-only
+    status: active
+    markdown_path: whitepapers/2026-05/chem_sim_algorithms/chem-r1-basis-size-scaling/README.md
+    artifacts_path: whitepapers/2026-05/chem_sim_algorithms/chem-r1-basis-size-scaling/artifacts.json
+  - goal_id: md_sim_algorithms
+    slug: md-r1-stability-matrix
+    path: whitepapers/2026-05/md_sim_algorithms/md-r1-stability-matrix
+    title: "MD Lennard-Jones — CFL and neighbor-skin stability matrix (placeholder)"
+    agent: numerics_researcher
+    run_id: seed-md-r1-2026-05-25
+    generated_at: "2026-05-25T12:00:00Z"
+    domains: [scientific_computing, hpc]
+    validity_grade: study-only
+    status: active
+    markdown_path: whitepapers/2026-05/md_sim_algorithms/md-r1-stability-matrix/README.md
+    artifacts_path: whitepapers/2026-05/md_sim_algorithms/md-r1-stability-matrix/artifacts.json
