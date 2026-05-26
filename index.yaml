@@ -1,5 +1,5 @@
 version: 1
-updated_at: "2026-05-25T19:57:14Z"
+updated_at: "2026-05-26T05:52:14Z"
 whitepapers:
   - goal_id: chem_sim_algorithms
     slug: chem-r1-basis-size-scaling
@@ -13,6 +13,18 @@ whitepapers:
     status: active
     markdown_path: whitepapers/2026-05/chem_sim_algorithms/chem-r1-basis-size-scaling/README.md
     artifacts_path: whitepapers/2026-05/chem_sim_algorithms/chem-r1-basis-size-scaling/artifacts.json
+  - goal_id: md_sim_algorithms
+    slug: md-r0-sota-survey
+    path: whitepapers/2026-05/md_sim_algorithms/md-r0-sota-survey
+    title: ""
+    agent: 
+    run_id: numerics_researcher-1779774622783
+    generated_at: "2026-05-26T06:15:00Z"
+    domains: []
+    validity_grade: study-only
+    status: active
+    markdown_path: whitepapers/2026-05/md_sim_algorithms/md-r0-sota-survey/README.md
+    artifacts_path: whitepapers/2026-05/md_sim_algorithms/md-r0-sota-survey/artifacts.json
   - goal_id: md_sim_algorithms
     slug: md-r1-stability-matrix
     path: whitepapers/2026-05/md_sim_algorithms/md-r1-stability-matrix

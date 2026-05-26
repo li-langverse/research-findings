@@ -1,0 +1,35 @@
+{
+  "schema": "li_whitepaper_artifacts_v1",
+  "goal_id": "md_sim_algorithms",
+  "slug": "md-r0-sota-survey",
+  "run_id": "numerics_researcher-1779774622783",
+  "generated_at": "2026-05-26T06:15:00Z",
+  "validity_grade": "study-only",
+  "evidence": [
+    {
+      "type": "numerics_study",
+      "path": "lic/docs/numerics/studies/2026-05-26-md-r0-sota-survey.md"
+    },
+    {
+      "type": "ecosystem_audit",
+      "path": "benchmarks/data/latest/ecosystem-audit.json",
+      "note": "near_threshold md_neighbor_cell_list 1.1764, md_constraints_shake 1.1747"
+    },
+    {
+      "type": "catalog",
+      "path": "benchmarks/catalog.toml",
+      "ids": ["md_lennard_jones", "md_neighbor_cell_list", "md_constraints_shake"]
+    },
+    {
+      "type": "bench_harness",
+      "path": "lic/benchmarks/tier2_physics/md_lennard_jones",
+      "command": "python3 lic/benchmarks/harness/bench.py --tier 2 --only md_lennard_jones"
+    },
+    {
+      "type": "li_tests",
+      "path": "lic/li-tests/composable/import_sim_scientific_run.li"
+    }
+  ],
+  "markdown_path": "whitepapers/2026-05/md_sim_algorithms/md-r0-sota-survey/README.md",
+  "snippets_dir": "whitepapers/2026-05/md_sim_algorithms/md-r0-sota-survey/snippets"
+}
