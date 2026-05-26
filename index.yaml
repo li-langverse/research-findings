@@ -136,10 +136,10 @@ whitepapers:
   - goal_id: database_platform
     slug: db-r0-vertical-seed
     path: whitepapers/2026-05/database_platform/db-r0-vertical-seed
-    title: "Database platform — vertical seed (study-only)"
+    title: "Database platform — vertical seed (R0 scope & PH-DB map)"
     agent: goal_researcher
     run_id: seed-db-r0-vertical-seed-2026-05-26
-    generated_at: "2026-05-26T12:00:00Z"
+    generated_at: "2026-05-26T18:00:00Z"
     domains: [database, ecosystem]
     validity_grade: study-only
     status: active

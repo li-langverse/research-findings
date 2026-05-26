@@ -2,13 +2,19 @@
   "version": 1,
   "goal_id": "database_platform",
   "agent": "goal_researcher",
-  "run_id": "seed-database-r0-2026-05-26",
-  "generated_at": "2026-05-26T12:00:00Z",
+  "run_id": "seed-db-r0-vertical-seed-2026-05-26",
+  "generated_at": "2026-05-26T18:00:00Z",
   "slug": "db-r0-vertical-seed",
-  "title": "Database platform — vertical seed (study-only)",
+  "title": "Database platform — vertical seed (R0 scope & PH-DB map)",
   "domains": ["database", "ecosystem"],
   "validity_grade": "study-only",
   "status": "active",
   "markdown_path": "whitepapers/2026-05/database_platform/db-r0-vertical-seed/README.md",
-  "snippets_dir": "whitepapers/2026-05/database_platform/db-r0-vertical-seed/snippets"
+  "snippets_dir": "whitepapers/2026-05/database_platform/db-r0-vertical-seed/snippets",
+  "links": [
+    "lic/docs/superpowers/plans/ph-db-lidb-platform.md",
+    "li-cursor-agents/docs/plans/lidb-migration-control-plane.md",
+    "benchmarks/docs/ecosystem/tier-db-registry-benchmark.md"
+  ],
+  "ph_ids": ["PH-DB-0", "PH-DB-1", "PH-DB-2", "PH-DB-3", "PH-DB-4", "PH-DB-5", "PH-DB-10", "PH-DB-G0"]
 }
