@@ -1,5 +1,5 @@
 version: 1
-updated_at: "2026-05-26T14:00:00Z"
+updated_at: "2026-05-26T20:30:00Z"
 whitepapers:
   - goal_id: numerics_sota
     slug: num-r0-vertical-seed
@@ -145,6 +145,30 @@ whitepapers:
     status: active
     markdown_path: whitepapers/2026-05/database_platform/db-r0-vertical-seed/README.md
     artifacts_path: whitepapers/2026-05/database_platform/db-r0-vertical-seed/artifacts.json
+  - goal_id: database_platform
+    slug: db-r0-1-postgres-subset-boundary
+    path: whitepapers/2026-05/database_platform/db-r0-1-postgres-subset-boundary
+    title: "DB-R0-1 — Postgres-subset boundary (registry DDL vs lip)"
+    agent: goal_researcher
+    run_id: db-r0-1-postgres-subset-boundary-2026-05-26
+    generated_at: "2026-05-26T20:00:00Z"
+    domains: [database, ecosystem]
+    validity_grade: study-only
+    status: complete
+    markdown_path: whitepapers/2026-05/database_platform/db-r0-1-postgres-subset-boundary/README.md
+    artifacts_path: whitepapers/2026-05/database_platform/db-r0-1-postgres-subset-boundary/artifacts.json
+  - goal_id: database_platform
+    slug: db-r0-4-control-plane-schema-parity
+    path: whitepapers/2026-05/database_platform/db-r0-4-control-plane-schema-parity
+    title: "DB-R0-4 — Control-plane schema parity (Supabase vs lidb plan)"
+    agent: goal_researcher
+    run_id: db-r0-4-control-plane-schema-parity-2026-05-26
+    generated_at: "2026-05-26T20:00:00Z"
+    domains: [database, ecosystem]
+    validity_grade: study-only
+    status: complete
+    markdown_path: whitepapers/2026-05/database_platform/db-r0-4-control-plane-schema-parity/README.md
+    artifacts_path: whitepapers/2026-05/database_platform/db-r0-4-control-plane-schema-parity/artifacts.json
   - goal_id: server_platform
     slug: srv-r0-vertical-seed
     path: whitepapers/2026-05/server_platform/srv-r0-vertical-seed

@@ -16,5 +16,17 @@
     "li-cursor-agents/docs/plans/lidb-migration-control-plane.md",
     "benchmarks/docs/ecosystem/tier-db-registry-benchmark.md"
   ],
-  "ph_ids": ["PH-DB-0", "PH-DB-1", "PH-DB-2", "PH-DB-3", "PH-DB-4", "PH-DB-5", "PH-DB-10", "PH-DB-G0"]
+  "ph_ids": ["PH-DB-0", "PH-DB-1", "PH-DB-2", "PH-DB-3", "PH-DB-4", "PH-DB-5", "PH-DB-10", "PH-DB-G0"],
+  "r0_experiments": [
+    {
+      "experiment_id": "DB-R0-1",
+      "status": "complete",
+      "markdown_path": "whitepapers/2026-05/database_platform/db-r0-1-postgres-subset-boundary/README.md"
+    },
+    {
+      "experiment_id": "DB-R0-4",
+      "status": "complete",
+      "markdown_path": "whitepapers/2026-05/database_platform/db-r0-4-control-plane-schema-parity/README.md"
+    }
+  ]
 }

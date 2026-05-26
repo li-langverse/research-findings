@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "goal_id": "database_platform",
+  "agent": "goal_researcher",
+  "run_id": "db-r0-1-postgres-subset-boundary-2026-05-26",
+  "generated_at": "2026-05-26T20:00:00Z",
+  "slug": "db-r0-1-postgres-subset-boundary",
+  "experiment_id": "DB-R0-1",
+  "title": "DB-R0-1 — Postgres-subset boundary (registry DDL vs lip)",
+  "domains": ["database", "ecosystem"],
+  "validity_grade": "study-only",
+  "status": "complete",
+  "parent_seed": "db-r0-vertical-seed",
+  "markdown_path": "whitepapers/2026-05/database_platform/db-r0-1-postgres-subset-boundary/README.md",
+  "snippets_dir": "whitepapers/2026-05/database_platform/db-r0-1-postgres-subset-boundary/snippets",
+  "reproduce": "whitepapers/2026-05/database_platform/db-r0-1-postgres-subset-boundary/scripts/reproduce.sh",
+  "ph_ids": ["PH-DB-0", "PH-DB-4", "PH-DB-5"],
+  "evidence": [
+    {
+      "type": "schema_diff",
+      "paths": [
+        "benchmarks/benchmarks/tier_db_registry/schema/registry-v1.sql",
+        "lidb/migrations/001_registry.sql"
+      ]
+    },
+    {
+      "type": "api_stub",
+      "path": "lip/registry/api/openapi-stub.yaml"
+    },
+    {
+      "type": "pg_subset_doc",
+      "path": "lidb/docs/pg-subset-v1.md"
+    }
+  ],
+  "links": [
+    "lic/docs/superpowers/plans/ph-db-battle-plan.md",
+    "benchmarks/docs/ecosystem/tier-db-registry-benchmark.md"
+  ]
+}

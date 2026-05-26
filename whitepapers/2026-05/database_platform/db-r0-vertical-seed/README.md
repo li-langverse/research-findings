@@ -133,6 +133,13 @@ Each experiment outputs a **study-only** note under `database_platform/` (or han
 
 **Recommended R0 sequencing:** DB-R0-1 → DB-R0-4 → DB-R0-5 (registry + control plane are Li’s near-term consumers); DB-R0-2 and DB-R0-6 in parallel for ADR support.
 
+### Completed R0 experiments (WP-F)
+
+| ID | Artifact | Status |
+|----|----------|--------|
+| **DB-R0-1** | [db-r0-1-postgres-subset-boundary](../db-r0-1-postgres-subset-boundary/README.md) | complete (study-only) |
+| **DB-R0-4** | [db-r0-4-control-plane-schema-parity](../db-r0-4-control-plane-schema-parity/README.md) | complete (study-only) |
+
 ---
 
 ## Handoff criteria

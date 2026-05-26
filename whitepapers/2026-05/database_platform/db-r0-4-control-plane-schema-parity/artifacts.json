@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "goal_id": "database_platform",
+  "agent": "goal_researcher",
+  "run_id": "db-r0-4-control-plane-schema-parity-2026-05-26",
+  "generated_at": "2026-05-26T20:00:00Z",
+  "slug": "db-r0-4-control-plane-schema-parity",
+  "experiment_id": "DB-R0-4",
+  "title": "DB-R0-4 — Control-plane schema parity (Supabase vs lidb plan)",
+  "domains": ["database", "ecosystem"],
+  "validity_grade": "study-only",
+  "status": "complete",
+  "parent_seed": "db-r0-vertical-seed",
+  "markdown_path": "whitepapers/2026-05/database_platform/db-r0-4-control-plane-schema-parity/README.md",
+  "snippets_dir": "whitepapers/2026-05/database_platform/db-r0-4-control-plane-schema-parity/snippets",
+  "reproduce": "whitepapers/2026-05/database_platform/db-r0-4-control-plane-schema-parity/scripts/reproduce.sh",
+  "ph_ids": ["PH-DB-10", "PH-DB-2"],
+  "evidence": [
+    {
+      "type": "supabase_migrations",
+      "path": "li-cursor-agents/supabase/migrations/"
+    },
+    {
+      "type": "allowlist",
+      "path": "li-cursor-agents/src/db/schema-catalog.ts"
+    },
+    {
+      "type": "migration_plan",
+      "path": "li-cursor-agents/docs/plans/lidb-migration-control-plane.md"
+    },
+    {
+      "type": "lidb_smoke_only",
+      "path": "lidb/migrations/archive/002_control_plane_embedded.sql",
+      "note": "SQLite smoke — not production parity"
+    }
+  ],
+  "links": [
+    "lic/docs/superpowers/plans/ph-db-battle-plan.md",
+    "li-cursor-agents/docs/plans/lidb-migration-control-plane.md"
+  ]
+}
