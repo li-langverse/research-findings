@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "goal_id": "simulation_techniques",
+  "agent": "numerics_researcher",
+  "run_id": "seed-sim-r0-vertical-seed-2026-05-26",
+  "generated_at": "2026-05-26T12:00:00Z",
+  "slug": "sim-r0-vertical-seed",
+  "title": "Simulation science — vertical seed (study-only)",
+  "domains": [scientific_computing, hpc, simulation],
+  "validity_grade": "study-only",
+  "status": "active",
+  "markdown_path": "whitepapers/2026-05/simulation_techniques/sim-r0-vertical-seed/README.md",
+  "snippets_dir": "whitepapers/2026-05/simulation_techniques/sim-r0-vertical-seed/snippets"
+}

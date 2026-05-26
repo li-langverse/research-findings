@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "goal_id": "ml_systems",
+  "agent": "goal_researcher",
+  "run_id": "seed-ml-r0-vertical-seed-2026-05-26",
+  "generated_at": "2026-05-26T12:00:00Z",
+  "slug": "ml-r0-vertical-seed",
+  "title": "Machine learning — vertical seed (study-only)",
+  "domains": [ai, machine_learning, scientific_computing],
+  "validity_grade": "study-only",
+  "status": "active",
+  "markdown_path": "whitepapers/2026-05/ml_systems/ml-r0-vertical-seed/README.md",
+  "snippets_dir": "whitepapers/2026-05/ml_systems/ml-r0-vertical-seed/snippets"
+}

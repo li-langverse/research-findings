@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "goal_id": "biology_systems",
+  "agent": "goal_researcher",
+  "run_id": "seed-biology-r0-2026-05-26",
+  "generated_at": "2026-05-26T12:00:00Z",
+  "slug": "bio-r0-vertical-seed",
+  "title": "Biology / bioinformatics — vertical seed (study-only)",
+  "domains": ["biology", "scientific_computing"],
+  "validity_grade": "study-only",
+  "status": "active",
+  "links": ["li-cursor-agents/docs/ecosystem/research-verticals.md"],
+  "markdown_path": "whitepapers/2026-05/biology_systems/bio-r0-vertical-seed/README.md",
+  "snippets_dir": "whitepapers/2026-05/biology_systems/bio-r0-vertical-seed/snippets"
+}

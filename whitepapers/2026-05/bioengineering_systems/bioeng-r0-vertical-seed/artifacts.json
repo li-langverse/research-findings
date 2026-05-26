@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "goal_id": "bioengineering_systems",
+  "agent": "goal_researcher",
+  "run_id": "seed-bioeng-r0-2026-05-26",
+  "generated_at": "2026-05-26T12:00:00Z",
+  "slug": "bioeng-r0-vertical-seed",
+  "title": "Bioengineering — vertical seed (study-only)",
+  "domains": ["bioengineering", "biology", "scientific_computing"],
+  "validity_grade": "study-only",
+  "status": "active",
+  "markdown_path": "whitepapers/2026-05/bioengineering_systems/bioeng-r0-vertical-seed/README.md",
+  "snippets_dir": "whitepapers/2026-05/bioengineering_systems/bioeng-r0-vertical-seed/snippets"
+}

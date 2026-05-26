@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "goal_id": "additive_manufacturing",
+  "agent": "goal_researcher",
+  "run_id": "seed-additive-r0-2026-05-26",
+  "generated_at": "2026-05-26T12:00:00Z",
+  "slug": "add-r0-vertical-seed",
+  "title": "Additive manufacturing — vertical seed (study-only)",
+  "domains": ["additive", "engineering", "scientific_computing"],
+  "validity_grade": "study-only",
+  "status": "active",
+  "markdown_path": "whitepapers/2026-05/additive_manufacturing/add-r0-vertical-seed/README.md",
+  "snippets_dir": "whitepapers/2026-05/additive_manufacturing/add-r0-vertical-seed/snippets"
+}

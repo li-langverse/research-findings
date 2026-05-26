@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "goal_id": "physics_sim",
+  "agent": "numerics_researcher",
+  "run_id": "seed-physics-r0-2026-05-26",
+  "generated_at": "2026-05-26T12:00:00Z",
+  "slug": "phys-r0-vertical-seed",
+  "title": "Computational physics — vertical seed (study-only)",
+  "domains": ["physics", "scientific_computing", "hpc"],
+  "validity_grade": "study-only",
+  "status": "active",
+  "links": ["li-cursor-agents/docs/ecosystem/research-verticals.md"],
+  "markdown_path": "whitepapers/2026-05/physics_sim/phys-r0-vertical-seed/README.md",
+  "snippets_dir": "whitepapers/2026-05/physics_sim/phys-r0-vertical-seed/snippets"
+}

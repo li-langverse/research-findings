@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "goal_id": "numerics_sota",
+  "agent": "numerics_researcher",
+  "run_id": "seed-numerics-r0-2026-05-26",
+  "generated_at": "2026-05-26T12:00:00Z",
+  "slug": "num-r0-vertical-seed",
+  "title": "Numerics / HPC — vertical seed (study-only)",
+  "domains": ["scientific_computing", "hpc"],
+  "validity_grade": "study-only",
+  "status": "active",
+  "links": ["https://li-langverse.github.io/benchmarks/"],
+  "markdown_path": "whitepapers/2026-05/numerics_sota/num-r0-vertical-seed/README.md",
+  "snippets_dir": "whitepapers/2026-05/numerics_sota/num-r0-vertical-seed/snippets"
+}

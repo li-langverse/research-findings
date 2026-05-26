@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "goal_id": "game_engine_ux",
+  "agent": "goal_researcher",
+  "run_id": "seed-gaming-r0-2026-05-26",
+  "generated_at": "2026-05-26T12:00:00Z",
+  "slug": "game-r0-vertical-seed",
+  "title": "Game engine + AI — vertical seed (study-only)",
+  "domains": ["gaming", "ai"],
+  "validity_grade": "study-only",
+  "status": "active",
+  "markdown_path": "whitepapers/2026-05/game_engine_ux/game-r0-vertical-seed/README.md",
+  "snippets_dir": "whitepapers/2026-05/game_engine_ux/game-r0-vertical-seed/snippets"
+}

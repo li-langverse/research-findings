@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "goal_id": "agentic_ai_systems",
+  "agent": "goal_researcher",
+  "run_id": "seed-agentic-r0-vertical-seed-2026-05-26",
+  "generated_at": "2026-05-26T12:00:00Z",
+  "slug": "agentic-r0-vertical-seed",
+  "title": "Agentic AI — vertical seed (study-only)",
+  "domains": [ai, agentic, ecosystem],
+  "validity_grade": "study-only",
+  "status": "active",
+  "markdown_path": "whitepapers/2026-05/agentic_ai_systems/agentic-r0-vertical-seed/README.md",
+  "snippets_dir": "whitepapers/2026-05/agentic_ai_systems/agentic-r0-vertical-seed/snippets"
+}

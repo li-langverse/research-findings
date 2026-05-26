@@ -1,26 +1,38 @@
 version: 1
-updated_at: "2026-05-26T05:52:14Z"
+updated_at: "2026-05-26T14:00:00Z"
 whitepapers:
-  - goal_id: chem_sim_algorithms
-    slug: chem-r1-basis-size-scaling
-    path: whitepapers/2026-05/chem_sim_algorithms/chem-r1-basis-size-scaling
-    title: "QM stub SCF — basis-size cost/accuracy scaling (placeholder)"
+  - goal_id: numerics_sota
+    slug: num-r0-vertical-seed
+    path: whitepapers/2026-05/numerics_sota/num-r0-vertical-seed
+    title: "Numerics / HPC — vertical seed (study-only)"
     agent: numerics_researcher
-    run_id: seed-chem-r1-2026-05-25
-    generated_at: "2026-05-25T12:00:00Z"
+    run_id: seed-num-r0-vertical-seed-2026-05-26
+    generated_at: "2026-05-26T12:00:00Z"
     domains: [scientific_computing, hpc]
     validity_grade: study-only
     status: active
-    markdown_path: whitepapers/2026-05/chem_sim_algorithms/chem-r1-basis-size-scaling/README.md
-    artifacts_path: whitepapers/2026-05/chem_sim_algorithms/chem-r1-basis-size-scaling/artifacts.json
+    markdown_path: whitepapers/2026-05/numerics_sota/num-r0-vertical-seed/README.md
+    artifacts_path: whitepapers/2026-05/numerics_sota/num-r0-vertical-seed/artifacts.json
+  - goal_id: physics_sim
+    slug: phys-r0-vertical-seed
+    path: whitepapers/2026-05/physics_sim/phys-r0-vertical-seed
+    title: "Computational physics — vertical seed (study-only)"
+    agent: numerics_researcher
+    run_id: seed-phys-r0-vertical-seed-2026-05-26
+    generated_at: "2026-05-26T12:00:00Z"
+    domains: [physics, scientific_computing, hpc]
+    validity_grade: study-only
+    status: active
+    markdown_path: whitepapers/2026-05/physics_sim/phys-r0-vertical-seed/README.md
+    artifacts_path: whitepapers/2026-05/physics_sim/phys-r0-vertical-seed/artifacts.json
   - goal_id: md_sim_algorithms
     slug: md-r0-sota-survey
     path: whitepapers/2026-05/md_sim_algorithms/md-r0-sota-survey
-    title: ""
-    agent: 
+    title: "MD SOTA survey"
+    agent: numerics_researcher
     run_id: numerics_researcher-1779774622783
     generated_at: "2026-05-26T06:15:00Z"
-    domains: []
+    domains: [scientific_computing, hpc]
     validity_grade: study-only
     status: active
     markdown_path: whitepapers/2026-05/md_sim_algorithms/md-r0-sota-survey/README.md
@@ -37,3 +49,195 @@ whitepapers:
     status: active
     markdown_path: whitepapers/2026-05/md_sim_algorithms/md-r1-stability-matrix/README.md
     artifacts_path: whitepapers/2026-05/md_sim_algorithms/md-r1-stability-matrix/artifacts.json
+  - goal_id: chem_sim_algorithms
+    slug: chem-r1-basis-size-scaling
+    path: whitepapers/2026-05/chem_sim_algorithms/chem-r1-basis-size-scaling
+    title: "QM stub SCF — basis-size cost/accuracy scaling (placeholder)"
+    agent: numerics_researcher
+    run_id: seed-chem-r1-2026-05-25
+    generated_at: "2026-05-25T12:00:00Z"
+    domains: [scientific_computing, hpc]
+    validity_grade: study-only
+    status: active
+    markdown_path: whitepapers/2026-05/chem_sim_algorithms/chem-r1-basis-size-scaling/README.md
+    artifacts_path: whitepapers/2026-05/chem_sim_algorithms/chem-r1-basis-size-scaling/artifacts.json
+  - goal_id: biology_systems
+    slug: bio-r0-vertical-seed
+    path: whitepapers/2026-05/biology_systems/bio-r0-vertical-seed
+    title: "Biology / bioinformatics — vertical seed (study-only)"
+    agent: goal_researcher
+    run_id: seed-bio-r0-vertical-seed-2026-05-26
+    generated_at: "2026-05-26T12:00:00Z"
+    domains: [biology, scientific_computing]
+    validity_grade: study-only
+    status: active
+    markdown_path: whitepapers/2026-05/biology_systems/bio-r0-vertical-seed/README.md
+    artifacts_path: whitepapers/2026-05/biology_systems/bio-r0-vertical-seed/artifacts.json
+  - goal_id: bioengineering_systems
+    slug: bioeng-r0-vertical-seed
+    path: whitepapers/2026-05/bioengineering_systems/bioeng-r0-vertical-seed
+    title: "Bioengineering — vertical seed (study-only)"
+    agent: goal_researcher
+    run_id: seed-bioeng-r0-vertical-seed-2026-05-26
+    generated_at: "2026-05-26T12:00:00Z"
+    domains: [bioengineering, biology, scientific_computing]
+    validity_grade: study-only
+    status: active
+    markdown_path: whitepapers/2026-05/bioengineering_systems/bioeng-r0-vertical-seed/README.md
+    artifacts_path: whitepapers/2026-05/bioengineering_systems/bioeng-r0-vertical-seed/artifacts.json
+  - goal_id: engineering_mechanical
+    slug: eng-r0-vertical-seed
+    path: whitepapers/2026-05/engineering_mechanical/eng-r0-vertical-seed
+    title: "Mechanical engineering — vertical seed (study-only)"
+    agent: goal_researcher
+    run_id: seed-eng-r0-vertical-seed-2026-05-26
+    generated_at: "2026-05-26T12:00:00Z"
+    domains: [engineering, scientific_computing]
+    validity_grade: study-only
+    status: active
+    markdown_path: whitepapers/2026-05/engineering_mechanical/eng-r0-vertical-seed/README.md
+    artifacts_path: whitepapers/2026-05/engineering_mechanical/eng-r0-vertical-seed/artifacts.json
+  - goal_id: additive_manufacturing
+    slug: add-r0-vertical-seed
+    path: whitepapers/2026-05/additive_manufacturing/add-r0-vertical-seed
+    title: "Additive manufacturing — vertical seed (study-only)"
+    agent: goal_researcher
+    run_id: seed-add-r0-vertical-seed-2026-05-26
+    generated_at: "2026-05-26T12:00:00Z"
+    domains: [additive, engineering, scientific_computing]
+    validity_grade: study-only
+    status: active
+    markdown_path: whitepapers/2026-05/additive_manufacturing/add-r0-vertical-seed/README.md
+    artifacts_path: whitepapers/2026-05/additive_manufacturing/add-r0-vertical-seed/artifacts.json
+  - goal_id: robotics_systems
+    slug: robo-r0-vertical-seed
+    path: whitepapers/2026-05/robotics_systems/robo-r0-vertical-seed
+    title: "Robotics — vertical seed (study-only)"
+    agent: goal_researcher
+    run_id: seed-robo-r0-vertical-seed-2026-05-26
+    generated_at: "2026-05-26T12:00:00Z"
+    domains: [robotics, scientific_computing, ai]
+    validity_grade: study-only
+    status: active
+    markdown_path: whitepapers/2026-05/robotics_systems/robo-r0-vertical-seed/README.md
+    artifacts_path: whitepapers/2026-05/robotics_systems/robo-r0-vertical-seed/artifacts.json
+  - goal_id: game_engine_ux
+    slug: game-r0-vertical-seed
+    path: whitepapers/2026-05/game_engine_ux/game-r0-vertical-seed
+    title: "Game engine + AI — vertical seed (study-only)"
+    agent: goal_researcher
+    run_id: seed-game-r0-vertical-seed-2026-05-26
+    generated_at: "2026-05-26T12:00:00Z"
+    domains: [gaming, ai]
+    validity_grade: study-only
+    status: active
+    markdown_path: whitepapers/2026-05/game_engine_ux/game-r0-vertical-seed/README.md
+    artifacts_path: whitepapers/2026-05/game_engine_ux/game-r0-vertical-seed/artifacts.json
+  - goal_id: database_platform
+    slug: db-r0-vertical-seed
+    path: whitepapers/2026-05/database_platform/db-r0-vertical-seed
+    title: "Database platform — vertical seed (study-only)"
+    agent: goal_researcher
+    run_id: seed-db-r0-vertical-seed-2026-05-26
+    generated_at: "2026-05-26T12:00:00Z"
+    domains: [database, ecosystem]
+    validity_grade: study-only
+    status: active
+    markdown_path: whitepapers/2026-05/database_platform/db-r0-vertical-seed/README.md
+    artifacts_path: whitepapers/2026-05/database_platform/db-r0-vertical-seed/artifacts.json
+  - goal_id: server_platform
+    slug: srv-r0-vertical-seed
+    path: whitepapers/2026-05/server_platform/srv-r0-vertical-seed
+    title: "Server / deploy platform — vertical seed (study-only)"
+    agent: goal_researcher
+    run_id: seed-srv-r0-vertical-seed-2026-05-26
+    generated_at: "2026-05-26T12:00:00Z"
+    domains: [server, web, ecosystem]
+    validity_grade: study-only
+    status: active
+    markdown_path: whitepapers/2026-05/server_platform/srv-r0-vertical-seed/README.md
+    artifacts_path: whitepapers/2026-05/server_platform/srv-r0-vertical-seed/artifacts.json
+  - goal_id: simulation_techniques
+    slug: sim-r0-vertical-seed
+    path: whitepapers/2026-05/simulation_techniques/sim-r0-vertical-seed
+    title: "Simulation science — vertical seed (study-only)"
+    agent: numerics_researcher
+    run_id: seed-sim-r0-vertical-seed-2026-05-26
+    generated_at: "2026-05-26T12:00:00Z"
+    domains: [scientific_computing, hpc, simulation]
+    validity_grade: study-only
+    status: active
+    markdown_path: whitepapers/2026-05/simulation_techniques/sim-r0-vertical-seed/README.md
+    artifacts_path: whitepapers/2026-05/simulation_techniques/sim-r0-vertical-seed/artifacts.json
+  - goal_id: scientific_distributed_computing
+    slug: hpc-r0-vertical-seed
+    path: whitepapers/2026-05/scientific_distributed_computing/hpc-r0-vertical-seed
+    title: "Scientific & distributed computing — vertical seed (study-only)"
+    agent: numerics_researcher
+    run_id: seed-hpc-r0-vertical-seed-2026-05-26
+    generated_at: "2026-05-26T12:00:00Z"
+    domains: [hpc, scientific_computing, distributed]
+    validity_grade: study-only
+    status: active
+    markdown_path: whitepapers/2026-05/scientific_distributed_computing/hpc-r0-vertical-seed/README.md
+    artifacts_path: whitepapers/2026-05/scientific_distributed_computing/hpc-r0-vertical-seed/artifacts.json
+  - goal_id: ml_systems
+    slug: ml-r0-vertical-seed
+    path: whitepapers/2026-05/ml_systems/ml-r0-vertical-seed
+    title: "Machine learning — vertical seed (study-only)"
+    agent: goal_researcher
+    run_id: seed-ml-r0-vertical-seed-2026-05-26
+    generated_at: "2026-05-26T12:00:00Z"
+    domains: [ai, machine_learning, scientific_computing]
+    validity_grade: study-only
+    status: active
+    markdown_path: whitepapers/2026-05/ml_systems/ml-r0-vertical-seed/README.md
+    artifacts_path: whitepapers/2026-05/ml_systems/ml-r0-vertical-seed/artifacts.json
+  - goal_id: deep_learning_systems
+    slug: dl-r0-vertical-seed
+    path: whitepapers/2026-05/deep_learning_systems/dl-r0-vertical-seed
+    title: "Deep learning — vertical seed (study-only)"
+    agent: goal_researcher
+    run_id: seed-dl-r0-vertical-seed-2026-05-26
+    generated_at: "2026-05-26T12:00:00Z"
+    domains: [ai, deep_learning, scientific_computing]
+    validity_grade: study-only
+    status: active
+    markdown_path: whitepapers/2026-05/deep_learning_systems/dl-r0-vertical-seed/README.md
+    artifacts_path: whitepapers/2026-05/deep_learning_systems/dl-r0-vertical-seed/artifacts.json
+  - goal_id: rl_systems
+    slug: rl-r0-vertical-seed
+    path: whitepapers/2026-05/rl_systems/rl-r0-vertical-seed
+    title: "Reinforcement learning — vertical seed (study-only)"
+    agent: goal_researcher
+    run_id: seed-rl-r0-vertical-seed-2026-05-26
+    generated_at: "2026-05-26T12:00:00Z"
+    domains: [ai, reinforcement_learning, robotics]
+    validity_grade: study-only
+    status: active
+    markdown_path: whitepapers/2026-05/rl_systems/rl-r0-vertical-seed/README.md
+    artifacts_path: whitepapers/2026-05/rl_systems/rl-r0-vertical-seed/artifacts.json
+  - goal_id: ai_ecosystem
+    slug: ai-r0-vertical-seed
+    path: whitepapers/2026-05/ai_ecosystem/ai-r0-vertical-seed
+    title: "AI ecosystem — vertical seed (study-only)"
+    agent: goal_researcher
+    run_id: seed-ai-r0-vertical-seed-2026-05-26
+    generated_at: "2026-05-26T12:00:00Z"
+    domains: [ai, scientific_computing]
+    validity_grade: study-only
+    status: active
+    markdown_path: whitepapers/2026-05/ai_ecosystem/ai-r0-vertical-seed/README.md
+    artifacts_path: whitepapers/2026-05/ai_ecosystem/ai-r0-vertical-seed/artifacts.json
+  - goal_id: agentic_ai_systems
+    slug: agentic-r0-vertical-seed
+    path: whitepapers/2026-05/agentic_ai_systems/agentic-r0-vertical-seed
+    title: "Agentic AI — vertical seed (study-only)"
+    agent: goal_researcher
+    run_id: seed-agentic-r0-vertical-seed-2026-05-26
+    generated_at: "2026-05-26T12:00:00Z"
+    domains: [ai, agentic, ecosystem]
+    validity_grade: study-only
+    status: active
+    markdown_path: whitepapers/2026-05/agentic_ai_systems/agentic-r0-vertical-seed/README.md
+    artifacts_path: whitepapers/2026-05/agentic_ai_systems/agentic-r0-vertical-seed/artifacts.json
