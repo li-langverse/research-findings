@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "goal_id": "provability_holes",
+  "agent": "proof_gap_researcher",
+  "run_id": "4c1f93b0-62ef-44f7-b08c-2c1cbca18ac9",
+  "generated_at": "2026-05-27T17:30:00Z",
+  "slug": "prov-r0-cycle1-proof-gap-digest",
+  "experiment_id": "PROV-R0-1",
+  "title": "PROV-R0-1 — Proof-gap digest (contracts, register, trusted surface)",
+  "domains": ["ecosystem"],
+  "validity_grade": "verified-in-repo",
+  "status": "complete",
+  "markdown_path": "whitepapers/2026-05/provability_holes/prov-r0-cycle1-proof-gap-digest/README.md",
+  "ph_ids": ["PH-2e", "PH-2f"],
+  "evidence": [
+    {
+      "type": "session_digest",
+      "path": "lic/docs/ecosystem/research-sessions/provability_holes-cycle.md"
+    },
+    {
+      "type": "register",
+      "path": "lic/docs/verification/provability-gaps.md"
+    },
+    {
+      "type": "repro_specimen",
+      "path": "lic/li-tests/proof_gaps/false_ensures_still_builds.li"
+    },
+    {
+      "type": "tooling_guard",
+      "path": "lic/li-tests/tooling/check_discharge_duplicate_defs.sh"
+    },
+    {
+      "type": "trusted_axioms",
+      "path": "lic/docs/semantics/trusted.lean"
+    }
+  ],
+  "links": [
+    "lic/docs/verification/provability-gaps.md",
+    "lic/docs/semantics/trusted.lean",
+    "lic/proof-database/DISCREPANCIES.md"
+  ],
+  "hypotheses_summary": {
+    "verified": 10,
+    "falsified": 3,
+    "deferred": 4
+  }
+}
