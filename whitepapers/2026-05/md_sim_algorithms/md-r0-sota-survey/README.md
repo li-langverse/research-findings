@@ -1,14 +1,15 @@
 ---
 goal_id: md_sim_algorithms
 agent: numerics_researcher
-run_id: numerics_researcher-1779774622783
-generated_at: 2026-05-26T06:15:00Z
+run_id: numerics_researcher-1779909647877
+generated_at: 2026-05-27T19:35:00Z
 domains: [scientific_computing, hpc]
 validity_grade: study-only
 title: "MD algorithms — LAMMPS/GROMACS/OpenMM SOTA survey and Li gap map"
 status: active
 links:
-  - lic/docs/numerics/studies/2026-05-26-md-r0-sota-survey.md
+  - lic/docs/numerics/studies/2026-05-27-md-r0-sota-survey.md
+  - lic/docs/numerics/studies/2026-05-25-md-r2-neighbor-list-gap.md
   - lic/docs/ecosystem/sim-md-research-backlog.md#md-r0-sota-survey
   - lic/docs/ecosystem/sim-algo-research-grading.md
   - https://li-langverse.github.io/benchmarks/
@@ -16,17 +17,17 @@ links:
 
 # MD algorithms — SOTA survey and Li gap map
 
-> **Goal:** `md_sim_algorithms` · **Run:** `numerics_researcher-1779774622783` · **Grade:** `study-only`
+> **Goal:** `md_sim_algorithms` · **Session:** `f1114f06-7079-45f3-9d88-ce5106130118` · **Run:** `numerics_researcher-1779909647877` · **Grade:** `study-only`
 
 ## Executive summary
 
-Surveyed LAMMPS, GROMACS, OpenMM, and standard NVE validation literature for short-range MD. Mapped **algo_registry 101–120** to incumbent patterns and Li packages (`li-sim-scientific`, `li-physics-particles`, tier-2 `md_lennard_jones`). Only **md_lennard_jones** has a full harness on `main`; neighbor/constraint/long-range catalog rows are **honesty stubs** until harness paths land. Preflight shows **near-threshold** `md_neighbor_cell_list` (1.18×) and `md_constraints_shake` (1.17×) with **missing lic paths** — next implement handoff is **`md-r2-neighbor-list-gap`** → `bench_improver` / `sim-p1-md-neighbor-cell`. Integrator microbench `num_integ_verlet` remains **red** (1.35× cpp) and blocks PH-7e MD integrator work.
+Surveyed LAMMPS, GROMACS, OpenMM, and Frenkel–Smit / Swope NVE literature for short-range MD. Mapped **algo_registry 101–120** to `li-sim-scientific`, `li-physics-particles`, and tier-2 benches. **`md_lennard_jones`** is the only production-grade physics path (brute O(N²) MIC); **`md_neighbor_cell_list`** has a catalog harness but shares the LJ oracle until cell traversal lands (md-r2). All **16 `md_*` dashboard rows are unknown** (stale ingest); org red is tier-1 `horner_pure_li` / `reduce_sum`. Next: **`sim-p1-md-neighbor-cell`** (algo 105) with brute-force parity before any `ratio_vs_cpp` claim.
 
 ## Hypothesis
 
 | Field | Value |
 |-------|-------|
-| Statement | Cell-linked neighbor list + shared `md_core.c` oracle achieves checksum parity before any perf claim on algo 105. |
+| Statement | Cell-linked neighbor list + shared `md_core` oracle achieves checksum parity before any perf claim on algo 105. |
 | Status | proposed |
 
 ## Analysis
@@ -36,7 +37,7 @@ Surveyed LAMMPS, GROMACS, OpenMM, and standard NVE validation literature for sho
 1. [LAMMPS neighbor lists](https://docs.lammps.org/neighbor.html) — skin, binning, rebuild criteria  
 2. [GROMACS algorithms manual](https://manual.gromacs.org/current/reference-manual/algorithms/index.html) — search grids, constraints, PME scope  
 3. [OpenMM application guide](https://docs.openmm.org/latest/userguide/application.html) — cutoffs, thermostats, drift testing  
-4. [Swope et al. 1997](https://doi.org/10.1006/jcph.1997.5740) — NVE conservation reference for `md_energy_drift`
+4. [Frenkel & Smit — *Understanding Molecular Simulation*](https://www.sciencedirect.com/book/9780123872324/understanding-molecular-simulation) — cell-linked O(N); [Swope et al. 1997](https://doi.org/10.1006/jcph.1997.5740) for NVE drift gates
 
 ### Li mapping
 
@@ -47,28 +48,30 @@ Surveyed LAMMPS, GROMACS, OpenMM, and standard NVE validation literature for sho
 | G-math | `requires dt > 0`, drift bounds in numerical policy |
 | G-par | `parallel for (disjoint=)` on force loop post-proof |
 
-Deep dive: `lic/docs/numerics/studies/2026-05-26-md-r0-sota-survey.md`
+Deep dive: `lic/docs/numerics/studies/2026-05-27-md-r0-sota-survey.md` · neighbor contract: `lic/docs/numerics/studies/2026-05-25-md-r2-neighbor-list-gap.md`
 
 ### Grade matrix
 
 | Axis | Li today | Target |
 |------|----------|--------|
-| Validity | tier-2 LJ green; registry stubs honest | locked |
-| Stability | stress suite documented | tier-0 matrix (`md-r1`) |
-| Performance | near-limit catalog only | after validity |
+| Validity | LJ harness + WP2 stubs on 105/106; cell list unproven | locked |
+| Stability | `[conservation]` in params.toml; md-r1 matrix | tier-0 fill |
+| Performance | MD ingest stale (unknown) | after parity on 105 |
 
 ## Recommendations
 
-1. **`bench_improver`:** implement `md_neighbor_cell_list` harness (algo 105) — do not relax `threshold_ratio_cpp`.  
-2. **`numerics_researcher`:** complete `md-r1-stability-matrix` with filled N=128/512/2048 drift table.  
-3. **Issue:** `numerics-research` — track catalog path gaps for ids 105–114 on `main`.
+1. **`bench_improver` / `sim-p1-md-neighbor-cell`:** real cell-linked forces in `md_core` (algo 105) — max |F_cell − F_brute| gate.  
+2. **`numerics_researcher`:** `li_gap_analysis` — package API surface vs registry.  
+3. **Ecosystem:** run `ingest-lic.sh` so `md_lennard_jones` exits dashboard **unknown**.
 
 ## Evidence
 
 | Type | Path |
 |------|------|
-| Study | `lic/docs/numerics/studies/2026-05-26-md-r0-sota-survey.md` |
+| Study | `lic/docs/numerics/studies/2026-05-27-md-r0-sota-survey.md` |
 | Audit | `benchmarks/data/latest/ecosystem-audit.json` |
+| li-tests | `lic/li-tests/composable/import_sim_scientific_run.li` |
+| Bench | `python3 lic/benchmarks/harness/bench.py --tier 2 --only md_lennard_jones` |
 | Snippet | `snippets/algo-registry-md-101-120.md` |
 
 ## Tradeoffs
