@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "goal_id": "chem_sim_algorithms",
+  "agent": "numerics_researcher",
+  "run_id": "numerics_researcher-1779869405908",
+  "generated_at": "2026-05-27T08:11:07Z",
+  "slug": "chem-r0-qm-sota-survey",
+  "title": "QM / DFT algorithms — Psi4/PySCF/ORCA SOTA survey and Li gap map",
+  "domains": ["scientific_computing", "hpc"],
+  "validity_grade": "study-only",
+  "status": "active",
+  "links": [
+    "lic/docs/numerics/studies/2026-05-27-chem-r0-qm-sota-survey.md",
+    "lic/docs/ecosystem/sim-chem-research-backlog.md#chem-r0-sota-survey",
+    "https://li-langverse.github.io/benchmarks/"
+  ],
+  "markdown_path": "whitepapers/2026-05/chem_sim_algorithms/chem-r0-qm-sota-survey/README.md",
+  "snippets_dir": "whitepapers/2026-05/chem_sim_algorithms/chem-r0-qm-sota-survey/snippets"
+}
