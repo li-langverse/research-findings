@@ -1,5 +1,5 @@
 version: 1
-updated_at: "2026-05-26T14:00:00Z"
+updated_at: "2026-05-27T21:17:56Z"
 whitepapers:
   - goal_id: numerics_sota
     slug: num-r0-vertical-seed
@@ -49,6 +49,18 @@ whitepapers:
     status: active
     markdown_path: whitepapers/2026-05/md_sim_algorithms/md-r1-stability-matrix/README.md
     artifacts_path: whitepapers/2026-05/md_sim_algorithms/md-r1-stability-matrix/artifacts.json
+  - goal_id: chem_sim_algorithms
+    slug: chem-r0-qm-sota-survey
+    path: whitepapers/2026-05/chem_sim_algorithms/chem-r0-qm-sota-survey
+    title: "Chemistry / QM — Psi4/PySCF/ORCA SOTA survey and Li gap map (401–432)"
+    agent: numerics_researcher
+    run_id: numerics_researcher-1779916590880
+    generated_at: "2026-05-27T21:17:56Z"
+    domains: [scientific_computing, hpc]
+    validity_grade: study-only
+    status: active
+    markdown_path: whitepapers/2026-05/chem_sim_algorithms/chem-r0-qm-sota-survey/README.md
+    artifacts_path: whitepapers/2026-05/chem_sim_algorithms/chem-r0-qm-sota-survey/artifacts.json
   - goal_id: chem_sim_algorithms
     slug: chem-r1-basis-size-scaling
     path: whitepapers/2026-05/chem_sim_algorithms/chem-r1-basis-size-scaling

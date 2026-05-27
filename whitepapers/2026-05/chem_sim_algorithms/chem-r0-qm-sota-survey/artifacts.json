@@ -1,0 +1,40 @@
+{
+  "schema": "li_whitepaper_artifacts_v1",
+  "goal_id": "chem_sim_algorithms",
+  "agent": "numerics_researcher",
+  "slug": "chem-r0-qm-sota-survey",
+  "title": "Chemistry / QM — Psi4/PySCF/ORCA SOTA survey and Li gap map (401–432)",
+  "status": "active",
+  "domains": ["scientific_computing", "hpc"],
+  "run_id": "numerics_researcher-1779916590880",
+  "generated_at": "2026-05-27T21:17:56Z",
+  "validity_grade": "study-only",
+  "evidence": [
+    {
+      "type": "numerics_study",
+      "path": "lic/docs/numerics/studies/2026-05-27-chem-r0-qm-sota-survey.md"
+    },
+    {
+      "type": "ecosystem_audit",
+      "path": "benchmarks/data/latest/ecosystem-audit.json",
+      "note": "32 unknown qm_* @ 2026-05-27T21:03Z; org red horner_pure_li, reduce_sum"
+    },
+    {
+      "type": "catalog",
+      "path": "benchmarks/catalog.toml",
+      "ids": ["qm_dft_scf_energy", "qm_gto_eval", "qm_dft_xc_lda"]
+    },
+    {
+      "type": "algo_registry",
+      "path": "lic/benchmarks/competitive/algo_registry.json",
+      "ids": "401-432"
+    },
+    {
+      "type": "sim_dispatch",
+      "path": "lic/packages/li-sim-scientific/src/lib.li",
+      "note": "vertical_qm_dft -> algo 418 via run_algo_registry_stub checksum 1.001"
+    }
+  ],
+  "markdown_path": "whitepapers/2026-05/chem_sim_algorithms/chem-r0-qm-sota-survey/README.md",
+  "snippets_dir": "whitepapers/2026-05/chem_sim_algorithms/chem-r0-qm-sota-survey/snippets"
+}
