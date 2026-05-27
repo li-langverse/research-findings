@@ -9,6 +9,7 @@ title: "Chemistry / QM — Psi4/PySCF/ORCA SOTA survey and Li gap map (401–432
 status: active
 links:
   - lic/docs/numerics/studies/2026-05-27-chem-r0-qm-sota-survey.md
+  - lic/docs/research/goals/chem_sim_algorithms.md
   - lic/docs/ecosystem/sim-chem-research-backlog.md#chem-r0-sota-survey
   - lic/docs/ecosystem/research-sessions/chem_sim_algorithms-cycle.md
   - https://li-langverse.github.io/benchmarks/
