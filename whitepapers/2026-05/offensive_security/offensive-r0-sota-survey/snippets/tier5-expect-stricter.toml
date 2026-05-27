@@ -1,0 +1,6 @@
+# Tier5 exploit contract — li must be stricter-or-equal vs nginx (from path_traversal.toml pattern)
+[expect]
+no_crash = true
+reject_or_close_attack = true
+legitimate_client_ok = true
+li_behavior = "stricter"

@@ -1,12 +1,13 @@
 # Research whitepapers — quick scan
 
-_Updated: 2026-05-27T17:02:28Z_ · rebuild: `li-cursor-agents/scripts/publish-research-whitepaper.sh`
+_Updated: 2026-05-27T17:54:08Z_ · rebuild: `li-cursor-agents/scripts/publish-research-whitepaper.sh`
 
 | Status | Grade | Goal | Title | Agent | Run | Path |
 |--------|-------|------|-------|-------|-----|------|
 | complete | verified-in-repo | `provability_holes` | PROV-R0-1 — Proof-gap digest (contracts, register, trusted surface) | proof_gap_researcher | `4c1f93b0-62ef-44f7-b08c-2c1cbca18ac9` | `whitepapers/2026-05/provability_holes/prov-r0-cycle1-proof-gap-digest` |
 | complete | study-only | `database_platform` | DB-R0-1 — Postgres-subset boundary (registry DDL vs lip) | goal_researcher | `db-r0-1-postgres-subset-boundary-2026-05-26` | `whitepapers/2026-05/database_platform/db-r0-1-postgres-subset-boundary` |
 | complete | study-only | `database_platform` | DB-R0-4 — Control-plane schema parity (Supabase vs lidb plan) | goal_researcher | `db-r0-4-control-plane-schema-parity-2026-05-26` | `whitepapers/2026-05/database_platform/db-r0-4-control-plane-schema-parity` |
+| active | study-only | `offensive_security` | Offensive security — MITRE/OWASP/nginx SOTA survey and Li gap map | security_auditor | `security_auditor-1779904309903` | `whitepapers/2026-05/offensive_security/offensive-r0-sota-survey` |
 | active | study-only | `chem_sim_algorithms` | QM / DFT algorithms — Psi4/PySCF/ORCA SOTA survey and Li gap map | numerics_researcher | `numerics_researcher-1779872738061` | `whitepapers/2026-05/chem_sim_algorithms/chem-r1-qm-sota-survey` |
 | active | study-only | `chem_sim_algorithms` | QM / DFT algorithms — Psi4/PySCF/ORCA SOTA survey and Li gap map | numerics_researcher | `numerics_researcher-1779869405908` | `whitepapers/2026-05/chem_sim_algorithms/chem-r0-qm-sota-survey` |
 | active | study-only | `database_platform` | Database platform — vertical seed (R0 scope & PH-DB map) | goal_researcher | `seed-db-r0-vertical-seed-2026-05-26` | `whitepapers/2026-05/database_platform/db-r0-vertical-seed` |

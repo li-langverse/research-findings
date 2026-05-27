@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "goal_id": "offensive_security",
+  "agent": "security_auditor",
+  "run_id": "security_auditor-1779904309903",
+  "generated_at": "2026-05-27T18:15:00Z",
+  "slug": "offensive-r0-sota-survey",
+  "title": "Offensive security — MITRE/OWASP/nginx SOTA survey and Li gap map",
+  "domains": ["ecosystem", "web"],
+  "validity_grade": "study-only",
+  "status": "active",
+  "links": [
+    "lic/docs/security/studies/2026-05-27-offensive-r0-sota-survey.md",
+    "lic/docs/ecosystem/security-research-backlog.md",
+    "lic/docs/ecosystem/security-research-grading.md",
+    "lic/docs/superpowers/plans/2026-05-16-li-httpd-plan.md",
+    "https://li-langverse.github.io/benchmarks/"
+  ],
+  "markdown_path": "whitepapers/2026-05/offensive_security/offensive-r0-sota-survey/README.md",
+  "snippets_dir": "whitepapers/2026-05/offensive_security/offensive-r0-sota-survey/snippets"
+}
