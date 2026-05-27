@@ -1,8 +1,8 @@
 ---
 goal_id: md_sim_algorithms
 agent: numerics_researcher
-run_id: numerics_researcher-1779909647877
-generated_at: 2026-05-27T19:35:00Z
+run_id: numerics_researcher-1779911656866
+generated_at: 2026-05-27T19:55:37Z
 domains: [scientific_computing, hpc]
 validity_grade: study-only
 title: "MD algorithms — LAMMPS/GROMACS/OpenMM SOTA survey and Li gap map"
@@ -17,7 +17,7 @@ links:
 
 # MD algorithms — SOTA survey and Li gap map
 
-> **Goal:** `md_sim_algorithms` · **Session:** `f1114f06-7079-45f3-9d88-ce5106130118` · **Run:** `numerics_researcher-1779909647877` · **Grade:** `study-only`
+> **Goal:** `md_sim_algorithms` · **Session:** `f1114f06-7079-45f3-9d88-ce5106130118` · **Run:** `numerics_researcher-1779911656866` · **Grade:** `study-only`
 
 ## Executive summary
 
@@ -71,7 +71,7 @@ Deep dive: `lic/docs/numerics/studies/2026-05-27-md-r0-sota-survey.md` · neighb
 | Study | `lic/docs/numerics/studies/2026-05-27-md-r0-sota-survey.md` |
 | Audit | `benchmarks/data/latest/ecosystem-audit.json` |
 | li-tests | `lic/li-tests/composable/import_sim_scientific_run.li` |
-| Bench | `python3 lic/benchmarks/harness/bench.py --tier 2 --only md_lennard_jones` |
+| Bench | `md_lennard_jones` @ git `48d23a7a`: verify drift=0.689; li/cpp≈0.996× (1.183s/1.188s) — `bench.py --tier 2 --only md_lennard_jones` |
 | Snippet | `snippets/algo-registry-md-101-120.md` |
 
 ## Tradeoffs

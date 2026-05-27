@@ -2,8 +2,8 @@
   "schema": "li_whitepaper_artifacts_v1",
   "goal_id": "md_sim_algorithms",
   "slug": "md-r0-sota-survey",
-  "run_id": "numerics_researcher-1779909647877",
-  "generated_at": "2026-05-27T19:35:00Z",
+  "run_id": "numerics_researcher-1779911656866",
+  "generated_at": "2026-05-27T19:55:37Z",
   "validity_grade": "study-only",
   "evidence": [
     {
@@ -28,7 +28,8 @@
     {
       "type": "bench_harness",
       "path": "lic/benchmarks/tier2_physics/md_lennard_jones",
-      "command": "python3 lic/benchmarks/harness/bench.py --tier 2 --only md_lennard_jones"
+      "command": "python3 lic/benchmarks/harness/bench.py --tier 2 --only md_lennard_jones",
+      "note": "2026-05-27T19:55Z verify drift=0.689; li/cpp≈0.996× @ 48d23a7a"
     },
     {
       "type": "li_tests",
