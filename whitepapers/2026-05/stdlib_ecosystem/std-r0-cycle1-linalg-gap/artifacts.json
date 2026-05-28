@@ -1,0 +1,56 @@
+{
+  "schema": "li_whitepaper_artifacts_v1",
+  "goal_id": "stdlib_ecosystem",
+  "slug": "std-r0-cycle1-linalg-gap",
+  "title": "Stdlib ecosystem — linear algebra gap vs SOTA (cycle 1)",
+  "agent": "stdlib_researcher",
+  "session_id": "cee09172-b61f-4f7b-84de-aae2d0e5972f",
+  "generated_at": "2026-05-28T21:00:00Z",
+  "domains": ["ecosystem", "scientific_computing", "hpc"],
+  "ph_ids": ["PH-2i", "PH-7e", "AL-10", "AL-11"],
+  "validity_grade": "B",
+  "status": "active",
+  "markdown_path": "whitepapers/2026-05/stdlib_ecosystem/std-r0-cycle1-linalg-gap/README.md",
+  "evidence": [
+    {
+      "type": "session_digest",
+      "path": "lic/docs/ecosystem/stdlib-research/cycle-1-gap-vs-sota-linalg.md"
+    },
+    {
+      "type": "language_doc",
+      "path": "lic/docs/language/linear-algebra.md"
+    },
+    {
+      "type": "li_std",
+      "path": "lic/std/math/math.li",
+      "note": "tag-only; no linalg ops"
+    },
+    {
+      "type": "package",
+      "path": "lic/packages/li-math/src/lib.li",
+      "note": "vec3_dot, array_dot_f64 → prelude @"
+    },
+    {
+      "type": "org_mirror",
+      "path": "li-std-math/src/lib.li"
+    },
+    {
+      "type": "li_tests",
+      "path": "lic/li-tests/math_linalg/dot_float_arrays.li"
+    },
+    {
+      "type": "bench",
+      "path": "lic/benchmarks/tier1_micro/simd_dot/li/main.li",
+      "note": "extern kernel — 7e-a gap"
+    },
+    {
+      "type": "compiler",
+      "path": "lic/compiler/mir/lower.cpp",
+      "note": "ArrayDotF64, ArrayMatMul2DF64"
+    }
+  ],
+  "notes": [
+    "Step gap_vs_sota complete; synthesize_step remains in queue.",
+    "No product code changes."
+  ]
+}
