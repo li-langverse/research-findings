@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "goal_id": "provability_holes",
+  "slug": "provability_holes",
+  "title": "Proof holes — compiler, contracts, trusted axioms",
+  "agent": "proof_gap_researcher",
+  "run_id": "97b0a884-e513-4a30-9793-5493bc1aed9e",
+  "generated_at": "2026-05-28T00:00:00Z",
+  "domains": ["ecosystem"],
+  "ph_ids": ["PH-2e", "PH-2f"],
+  "validity_grade": "B",
+  "status": "active",
+  "markdown_path": "whitepapers/2026-05/provability_holes/README.md",
+  "notes": [
+    "Cycle 1 focus step: contract tiers (li-tests manifest integrity + allow-open-vc boundary)."
+  ]
+}
+

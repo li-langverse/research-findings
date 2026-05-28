@@ -1,5 +1,5 @@
 version: 1
-updated_at: "2026-05-28T10:06:19Z"
+updated_at: "2026-05-28T12:06:45Z"
 whitepapers:
   - goal_id: additive_manufacturing
     slug: add-r0-vertical-seed
@@ -193,6 +193,18 @@ whitepapers:
     status: active
     markdown_path: whitepapers/2026-05/physics_sim/phys-r0-vertical-seed/README.md
     artifacts_path: whitepapers/2026-05/physics_sim/phys-r0-vertical-seed/artifacts.json
+  - goal_id: provability_holes
+    slug: provability_holes
+    path: whitepapers/2026-05/provability_holes
+    title: "Proof holes — compiler, contracts, trusted axioms"
+    agent: proof_gap_researcher
+    run_id: 97b0a884-e513-4a30-9793-5493bc1aed9e
+    generated_at: "2026-05-28T00:00:00Z"
+    domains: [ecosystem]
+    validity_grade: B
+    status: active
+    markdown_path: whitepapers/2026-05/provability_holes/README.md
+    artifacts_path: whitepapers/2026-05/provability_holes/artifacts.json
   - goal_id: rl_systems
     slug: rl-r0-vertical-seed
     path: whitepapers/2026-05/rl_systems/rl-r0-vertical-seed
