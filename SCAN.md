@@ -1,12 +1,13 @@
 # Research whitepapers — quick scan
 
-_Updated: 2026-05-28T12:06:45Z_ · rebuild: `li-cursor-agents/scripts/publish-research-whitepaper.sh`
+_Updated: 2026-05-28T20:12:11Z_ · rebuild: `li-cursor-agents/scripts/publish-research-whitepaper.sh`
 
 | Status | Grade | Goal | Title | Agent | Run | Path |
 |--------|-------|------|-------|-------|-----|------|
+| active | B | `provability_holes` | Proof holes — compiler, contracts, trusted axioms | proof_gap_researcher | `97b0a884-e513-4a30-9793-5493bc1aed9e` | `whitepapers/2026-05/provability_holes` |
+| active | B | `provability_holes` | Proof holes — cycle 1 digest (register + contract tiers) | proof_gap_researcher | `97b0a884-e513-4a30-9793-5493bc1aed9e` | `whitepapers/2026-05/provability_holes/prov-r0-cycle1-proof-gap-digest` |
 | active | verified | `robotics_systems` | Robotics SOTA survey — planning, control, perception mapped to Li | goal_researcher | `goal_researcher-f32363a0-c1-2026-05-28` | `whitepapers/2026-05/robotics_systems/robo-r1-survey-sota` |
 | active | study-only | `chem_sim_algorithms` | Chemistry / QM — Psi4/PySCF/ORCA SOTA survey and Li gap map (401–432) | numerics_researcher | `numerics_researcher-1779943243424` | `whitepapers/2026-05/chem_sim_algorithms/chem-r0-qm-sota-survey` |
-| active | B | `provability_holes` | Proof holes — compiler, contracts, trusted axioms | proof_gap_researcher | `97b0a884-e513-4a30-9793-5493bc1aed9e` | `whitepapers/2026-05/provability_holes` |
 | active | study-only | `md_sim_algorithms` |  |  | `numerics_researcher-1779911656866` | `whitepapers/2026-05/md_sim_algorithms/md-r0-sota-survey` |
 | active | study-only | `database_platform` | Database platform — vertical seed (R0 scope & PH-DB map) | goal_researcher | `seed-db-r0-vertical-seed-2026-05-26` | `whitepapers/2026-05/database_platform/db-r0-vertical-seed` |
 | active | study-only | `additive_manufacturing` | Additive manufacturing — vertical seed (study-only) | goal_researcher | `seed-additive-r0-2026-05-26` | `whitepapers/2026-05/additive_manufacturing/add-r0-vertical-seed` |
