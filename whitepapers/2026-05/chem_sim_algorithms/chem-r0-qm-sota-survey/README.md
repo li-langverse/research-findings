@@ -1,8 +1,8 @@
 ---
 goal_id: chem_sim_algorithms
 agent: numerics_researcher
-run_id: numerics_researcher-1779916590880
-generated_at: 2026-05-27T21:17:56Z
+run_id: numerics_researcher-1779943243424
+generated_at: 2026-05-28T04:41:35Z
 domains: [scientific_computing, hpc]
 validity_grade: study-only
 title: "Chemistry / QM — Psi4/PySCF/ORCA SOTA survey and Li gap map (401–432)"
@@ -17,7 +17,7 @@ links:
 
 # Chemistry / QM — SOTA survey and Li gap map
 
-> **Goal:** `chem_sim_algorithms` · **Session:** `1bdb6322-8399-425d-9257-9b9098475e89` · **Run:** `numerics_researcher-1779916590880` · **Grade:** `study-only`
+> **Goal:** `chem_sim_algorithms` · **Session:** `1bdb6322-8399-425d-9257-9b9098475e89` · **Digest run:** `numerics_researcher-1779943243424` · **Survey run:** `numerics_researcher-1779916590880` · **Grade:** `study-only`
 
 ## Executive summary
 
