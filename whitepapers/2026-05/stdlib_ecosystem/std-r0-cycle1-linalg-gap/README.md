@@ -87,4 +87,4 @@ Do not stuff GEMM into `std/math` stubs before Wave A **G-math** is Done. Prefer
 ## Deferred
 
 - Full `li-std-core` package audit (version stub only).  
-- `synthesize_step` YAML rollup (next session step).
+- Cycle rollup: [std-r0-cycle1-ecosystem-summary](../std-r0-cycle1-ecosystem-summary/README.md).
