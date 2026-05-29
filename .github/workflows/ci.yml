@@ -65,8 +65,41 @@ jobs:
           LI_RESEARCH_FINDINGS_ROOT: ${{ github.workspace }}
         run: |
           set -euo pipefail
+          cp index.yaml index.yaml.committed
+          cp SCAN.md SCAN.md.committed
           cd li-cursor-agents
           chmod +x scripts/publish-research-whitepaper.sh
           ./scripts/publish-research-whitepaper.sh
           cd ..
-          git diff --exit-code index.yaml SCAN.md
+          python3 <<'PY'
+          import difflib
+          import re
+          import sys
+          from pathlib import Path
+
+          def norm_index(text: str) -> str:
+              return re.sub(r"^updated_at:.*$", "updated_at: normalized", text, flags=re.M)
+
+          def norm_scan(text: str) -> str:
+              return re.sub(r"^_Updated:.*$", "_Updated: normalized", text, flags=re.M)
+
+          failed = False
+          for name, norm in (("index.yaml", norm_index), ("SCAN.md", norm_scan)):
+              committed = norm(Path(f"{name}.committed").read_text(encoding="utf-8"))
+              rebuilt = norm(Path(name).read_text(encoding="utf-8"))
+              if committed == rebuilt:
+                  continue
+              failed = True
+              print(f"{name} out of sync with whitepapers/**/artifacts.json", file=sys.stderr)
+              for line in difflib.unified_diff(
+                  committed.splitlines(),
+                  rebuilt.splitlines(),
+                  fromfile=f"committed/{name}",
+                  tofile=f"rebuilt/{name}",
+                  lineterm="",
+              ):
+                  print(line, file=sys.stderr)
+          if failed:
+              sys.exit(1)
+          print("index.yaml and SCAN.md match catalog (timestamps ignored)")
+          PY
