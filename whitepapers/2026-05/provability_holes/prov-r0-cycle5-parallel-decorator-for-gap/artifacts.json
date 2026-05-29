@@ -1,0 +1,53 @@
+{
+  "schema": "li_whitepaper_artifacts_v1",
+  "goal_id": "provability_holes",
+  "slug": "prov-r0-cycle5-parallel-decorator-for-gap",
+  "title": "Proof holes — cycle 5 (G-dec @parallel on plain for)",
+  "agent": "proof_gap_researcher",
+  "run_id": "proof_gap_researcher-2026-05-29-parallel-decorator-for",
+  "generated_at": "2026-05-29T14:45:00Z",
+  "domains": ["ecosystem"],
+  "ph_ids": ["PH-2e", "PH-2f", "PH-7d"],
+  "validity_grade": "B",
+  "status": "active",
+  "markdown_path": "whitepapers/2026-05/provability_holes/prov-r0-cycle5-parallel-decorator-for-gap/README.md",
+  "evidence": [
+    {
+      "type": "session_digest",
+      "path": "lic/docs/ecosystem/research-sessions/provability_holes-cycle5-parallel-decorator-for.md"
+    },
+    {
+      "type": "li_tests",
+      "path": "lic/li-tests/decorators/parallel_decorator_on_for_serial.li",
+      "command": "lic check; build — no __li_par_*"
+    },
+    {
+      "type": "li_tests",
+      "path": "lic/li-tests/decorators/parallel_decorator_on_for_no_disjoint.li",
+      "command": "lic check exit 0 — policy gap"
+    },
+    {
+      "type": "tooling",
+      "path": "lic/li-tests/tooling/parallel_decorator_for_elaboration_gap.sh"
+    },
+    {
+      "type": "compiler",
+      "path": "lic/compiler/mir/lower.cpp",
+      "note": "ParallelFor 1941-1969 vs For 1994-2040"
+    },
+    {
+      "type": "compiler",
+      "path": "lic/compiler/types/policy_module.cpp",
+      "note": "check_stmt_parallel only ParallelFor 171-172"
+    },
+    {
+      "type": "register",
+      "path": "lic/docs/verification/provability-gaps.md",
+      "note": "G-dec row"
+    }
+  ],
+  "notes": [
+    "Cycle 5: G-dec decorator-for serial lowering + missing disjoint policy on for.",
+    "No trusted.lean edits."
+  ]
+}
