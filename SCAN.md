@@ -1,9 +1,15 @@
 # Research whitepapers — quick scan
 
-_Updated: 2026-05-28T20:12:11Z_ · rebuild: `li-cursor-agents/scripts/publish-research-whitepaper.sh`
+_Updated: 2026-05-29T15:26:29Z_ · rebuild: `li-cursor-agents/scripts/publish-research-whitepaper.sh`
 
 | Status | Grade | Goal | Title | Agent | Run | Path |
 |--------|-------|------|-------|-------|-----|------|
+| active | B | `provability_holes` | Proof holes — cycle 5 (G-dec @parallel on plain for) | proof_gap_researcher | `proof_gap_researcher-2026-05-29-parallel-decorator-for` | `whitepapers/2026-05/provability_holes/prov-r0-cycle5-parallel-decorator-for-gap` |
+| active | B | `provability_holes` | Proof holes — cycle 4 (G-bnd refinement Lean / codegen stub) | proof_gap_researcher | `proof_gap_researcher-2026-05-29-bounds-refinement` | `whitepapers/2026-05/provability_holes/prov-r0-cycle4-bounds-refinement-vc-gap` |
+| active | B | `provability_holes` | Proof holes — cycle 3 (G-par disjoint_row policy soundness) | proof_gap_researcher | `proof_gap_researcher-2026-05-29-disjoint-row` | `whitepapers/2026-05/provability_holes/prov-r0-cycle3-disjoint-row-policy-gap` |
+| active | B | `provability_holes` | Proof holes — cycle 2 (mat2 @ codegen vs Lean eval) | proof_gap_researcher | `c8f2a91d-4e6b-4a1c-9f3d-202605291005` | `whitepapers/2026-05/provability_holes/prov-r0-cycle2-mat2-codegen-drift` |
+| active | B | `stdlib_ecosystem` | Stdlib ecosystem — cycle 1 summary (inventory + linalg gap) | stdlib_researcher | `` | `whitepapers/2026-05/stdlib_ecosystem/std-r0-cycle1-ecosystem-summary` |
+| active | B | `stdlib_ecosystem` | Stdlib ecosystem — linear algebra gap vs SOTA (cycle 1) | stdlib_researcher | `` | `whitepapers/2026-05/stdlib_ecosystem/std-r0-cycle1-linalg-gap` |
 | active | B | `provability_holes` | Proof holes — compiler, contracts, trusted axioms | proof_gap_researcher | `97b0a884-e513-4a30-9793-5493bc1aed9e` | `whitepapers/2026-05/provability_holes` |
 | active | B | `provability_holes` | Proof holes — cycle 1 digest (register + contract tiers) | proof_gap_researcher | `97b0a884-e513-4a30-9793-5493bc1aed9e` | `whitepapers/2026-05/provability_holes/prov-r0-cycle1-proof-gap-digest` |
 | active | verified | `robotics_systems` | Robotics SOTA survey — planning, control, perception mapped to Li | goal_researcher | `goal_researcher-f32363a0-c1-2026-05-28` | `whitepapers/2026-05/robotics_systems/robo-r1-survey-sota` |
@@ -28,3 +34,5 @@ _Updated: 2026-05-28T20:12:11Z_ · rebuild: `li-cursor-agents/scripts/publish-re
 | active | study-only | `simulation_techniques` | Simulation science — vertical seed (study-only) | numerics_researcher | `seed-sim-r0-vertical-seed-2026-05-26` | `whitepapers/2026-05/simulation_techniques/sim-r0-vertical-seed` |
 | active | study-only | `chem_sim_algorithms` | QM stub SCF — basis-size cost/accuracy scaling (placeholder) | numerics_researcher | `seed-chem-r1-2026-05-25` | `whitepapers/2026-05/chem_sim_algorithms/chem-r1-basis-size-scaling` |
 | active | study-only | `md_sim_algorithms` | MD Lennard-Jones — CFL and neighbor-skin stability matrix (placeholder) | numerics_researcher | `seed-md-r1-2026-05-25` | `whitepapers/2026-05/md_sim_algorithms/md-r1-stability-matrix` |
+| active | B | `provability_holes` | Proof holes — cycle 7 (G-par disjoint_elem constant index) | proof_gap_researcher | `proof_gap_researcher-2026-05-29-disjoint-elem-constant` | `whitepapers/2026-05/provability_holes/prov-r0-cycle7-disjoint-elem-constant-index-gap` |
+| active | B | `provability_holes` | Proof holes — cycle 8 (G-par/G-dec decorator-for policy bypass) | proof_gap_researcher | `proof_gap_researcher-2026-05-29-decorator-for-policy` | `whitepapers/2026-05/provability_holes/prov-r0-cycle8-decorator-for-policy-bypass` |

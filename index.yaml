@@ -1,5 +1,5 @@
 version: 1
-updated_at: "2026-05-28T20:12:11Z"
+updated_at: "2026-05-29T15:26:29Z"
 whitepapers:
   - goal_id: additive_manufacturing
     slug: add-r0-vertical-seed
@@ -217,6 +217,78 @@ whitepapers:
     status: active
     markdown_path: whitepapers/2026-05/provability_holes/prov-r0-cycle1-proof-gap-digest/README.md
     artifacts_path: whitepapers/2026-05/provability_holes/prov-r0-cycle1-proof-gap-digest/artifacts.json
+  - goal_id: provability_holes
+    slug: prov-r0-cycle2-mat2-codegen-drift
+    path: whitepapers/2026-05/provability_holes/prov-r0-cycle2-mat2-codegen-drift
+    title: "Proof holes — cycle 2 (mat2 @ codegen vs Lean eval)"
+    agent: proof_gap_researcher
+    run_id: c8f2a91d-4e6b-4a1c-9f3d-202605291005
+    generated_at: "2026-05-29T10:30:00Z"
+    domains: [ecosystem]
+    validity_grade: B
+    status: active
+    markdown_path: whitepapers/2026-05/provability_holes/prov-r0-cycle2-mat2-codegen-drift/README.md
+    artifacts_path: whitepapers/2026-05/provability_holes/prov-r0-cycle2-mat2-codegen-drift/artifacts.json
+  - goal_id: provability_holes
+    slug: prov-r0-cycle3-disjoint-row-policy-gap
+    path: whitepapers/2026-05/provability_holes/prov-r0-cycle3-disjoint-row-policy-gap
+    title: "Proof holes — cycle 3 (G-par disjoint_row policy soundness)"
+    agent: proof_gap_researcher
+    run_id: proof_gap_researcher-2026-05-29-disjoint-row
+    generated_at: "2026-05-29T10:45:00Z"
+    domains: [ecosystem]
+    validity_grade: B
+    status: active
+    markdown_path: whitepapers/2026-05/provability_holes/prov-r0-cycle3-disjoint-row-policy-gap/README.md
+    artifacts_path: whitepapers/2026-05/provability_holes/prov-r0-cycle3-disjoint-row-policy-gap/artifacts.json
+  - goal_id: provability_holes
+    slug: prov-r0-cycle4-bounds-refinement-vc-gap
+    path: whitepapers/2026-05/provability_holes/prov-r0-cycle4-bounds-refinement-vc-gap
+    title: "Proof holes — cycle 4 (G-bnd refinement Lean / codegen stub)"
+    agent: proof_gap_researcher
+    run_id: proof_gap_researcher-2026-05-29-bounds-refinement
+    generated_at: "2026-05-29T13:10:00Z"
+    domains: [ecosystem]
+    validity_grade: B
+    status: active
+    markdown_path: whitepapers/2026-05/provability_holes/prov-r0-cycle4-bounds-refinement-vc-gap/README.md
+    artifacts_path: whitepapers/2026-05/provability_holes/prov-r0-cycle4-bounds-refinement-vc-gap/artifacts.json
+  - goal_id: provability_holes
+    slug: prov-r0-cycle5-parallel-decorator-for-gap
+    path: whitepapers/2026-05/provability_holes/prov-r0-cycle5-parallel-decorator-for-gap
+    title: "Proof holes — cycle 5 (G-dec @parallel on plain for)"
+    agent: proof_gap_researcher
+    run_id: proof_gap_researcher-2026-05-29-parallel-decorator-for
+    generated_at: "2026-05-29T14:45:00Z"
+    domains: [ecosystem]
+    validity_grade: B
+    status: active
+    markdown_path: whitepapers/2026-05/provability_holes/prov-r0-cycle5-parallel-decorator-for-gap/README.md
+    artifacts_path: whitepapers/2026-05/provability_holes/prov-r0-cycle5-parallel-decorator-for-gap/artifacts.json
+  - goal_id: provability_holes
+    slug: prov-r0-cycle7-disjoint-elem-constant-index-gap
+    path: whitepapers/2026-05/provability_holes/prov-r0-cycle7-disjoint-elem-constant-index-gap
+    title: "Proof holes — cycle 7 (G-par disjoint_elem constant index)"
+    agent: proof_gap_researcher
+    run_id: proof_gap_researcher-2026-05-29-disjoint-elem-constant
+    generated_at: ""
+    domains: []
+    validity_grade: B
+    status: active
+    markdown_path: whitepapers/2026-05/provability_holes/prov-r0-cycle7-disjoint-elem-constant-index-gap/README.md
+    artifacts_path: whitepapers/2026-05/provability_holes/prov-r0-cycle7-disjoint-elem-constant-index-gap/artifacts.json
+  - goal_id: provability_holes
+    slug: prov-r0-cycle8-decorator-for-policy-bypass
+    path: whitepapers/2026-05/provability_holes/prov-r0-cycle8-decorator-for-policy-bypass
+    title: "Proof holes — cycle 8 (G-par/G-dec decorator-for policy bypass)"
+    agent: proof_gap_researcher
+    run_id: proof_gap_researcher-2026-05-29-decorator-for-policy
+    generated_at: ""
+    domains: []
+    validity_grade: B
+    status: active
+    markdown_path: whitepapers/2026-05/provability_holes/prov-r0-cycle8-decorator-for-policy-bypass/README.md
+    artifacts_path: whitepapers/2026-05/provability_holes/prov-r0-cycle8-decorator-for-policy-bypass/artifacts.json
   - goal_id: rl_systems
     slug: rl-r0-vertical-seed
     path: whitepapers/2026-05/rl_systems/rl-r0-vertical-seed
@@ -289,3 +361,27 @@ whitepapers:
     status: active
     markdown_path: whitepapers/2026-05/simulation_techniques/sim-r0-vertical-seed/README.md
     artifacts_path: whitepapers/2026-05/simulation_techniques/sim-r0-vertical-seed/artifacts.json
+  - goal_id: stdlib_ecosystem
+    slug: std-r0-cycle1-ecosystem-summary
+    path: whitepapers/2026-05/stdlib_ecosystem/std-r0-cycle1-ecosystem-summary
+    title: "Stdlib ecosystem — cycle 1 summary (inventory + linalg gap)"
+    agent: stdlib_researcher
+    run_id: 
+    generated_at: "2026-05-28T21:30:00Z"
+    domains: [ecosystem, scientific_computing, hpc]
+    validity_grade: B
+    status: active
+    markdown_path: whitepapers/2026-05/stdlib_ecosystem/std-r0-cycle1-ecosystem-summary/README.md
+    artifacts_path: whitepapers/2026-05/stdlib_ecosystem/std-r0-cycle1-ecosystem-summary/artifacts.json
+  - goal_id: stdlib_ecosystem
+    slug: std-r0-cycle1-linalg-gap
+    path: whitepapers/2026-05/stdlib_ecosystem/std-r0-cycle1-linalg-gap
+    title: "Stdlib ecosystem — linear algebra gap vs SOTA (cycle 1)"
+    agent: stdlib_researcher
+    run_id: 
+    generated_at: "2026-05-28T21:00:00Z"
+    domains: [ecosystem, scientific_computing, hpc]
+    validity_grade: B
+    status: active
+    markdown_path: whitepapers/2026-05/stdlib_ecosystem/std-r0-cycle1-linalg-gap/README.md
+    artifacts_path: whitepapers/2026-05/stdlib_ecosystem/std-r0-cycle1-linalg-gap/artifacts.json
