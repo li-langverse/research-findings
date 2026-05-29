@@ -1,0 +1,48 @@
+{
+  "schema": "li_whitepaper_artifacts_v1",
+  "goal_id": "provability_holes",
+  "slug": "prov-r0-cycle4-bounds-refinement-vc-gap",
+  "title": "Proof holes — cycle 4 (G-bnd refinement Lean / codegen stub)",
+  "agent": "proof_gap_researcher",
+  "run_id": "proof_gap_researcher-2026-05-29-bounds-refinement",
+  "generated_at": "2026-05-29T13:10:00Z",
+  "domains": ["ecosystem"],
+  "ph_ids": ["PH-2e", "PH-2f"],
+  "validity_grade": "B",
+  "status": "active",
+  "markdown_path": "whitepapers/2026-05/provability_holes/prov-r0-cycle4-bounds-refinement-vc-gap/README.md",
+  "evidence": [
+    {
+      "type": "session_digest",
+      "path": "lic/docs/ecosystem/research-sessions/provability_holes-cycle4-bounds-refinement-vc.md"
+    },
+    {
+      "type": "li_tests",
+      "path": "lic/li-tests/contracts_verify/index_refinement.li",
+      "command": "lic build; AutoVC vc_get_requires_0 := True"
+    },
+    {
+      "type": "tooling",
+      "path": "lic/li-tests/tooling/bounds_refinement_lean_gap.sh"
+    },
+    {
+      "type": "compiler",
+      "path": "lic/compiler/verify/vc_emit_lean.cpp",
+      "note": "witnessed refinement → prop True lines 550-551"
+    },
+    {
+      "type": "compiler",
+      "path": "lic/compiler/codegen/emit.cpp",
+      "note": "li_bounds_fail declared 1275, not called; inbounds GEP 896-922"
+    },
+    {
+      "type": "register",
+      "path": "lic/docs/verification/provability-gaps.md",
+      "note": "G-bnd row"
+    }
+  ],
+  "notes": [
+    "Cycle 4 focus: G-bnd / P-refine refinement bounds not in Lean or codegen.",
+    "No trusted.lean edits."
+  ]
+}
