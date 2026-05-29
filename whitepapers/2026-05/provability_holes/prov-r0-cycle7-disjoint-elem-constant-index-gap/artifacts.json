@@ -1,0 +1,36 @@
+{
+  "goal_id": "provability_holes",
+  "agent": "proof_gap_researcher",
+  "run_id": "proof_gap_researcher-2026-05-29-disjoint-elem-constant",
+  "title": "Proof holes — cycle 7 (G-par disjoint_elem constant index)",
+  "validity_grade": "B",
+  "artifacts": [
+    {
+      "kind": "specimen",
+      "repo": "lic",
+      "path": "lic/li-tests/race_shared_memory/false_disjoint_elem_constant_index.li",
+      "note": "unsound; passes lic check today"
+    },
+    {
+      "kind": "specimen",
+      "repo": "lic",
+      "path": "lic/li-tests/race_shared_memory/good_disjoint_elem_per_index.li",
+      "note": "sound control"
+    },
+    {
+      "kind": "tooling",
+      "repo": "lic",
+      "path": "lic/li-tests/tooling/policy_disjoint_elem_soundness.sh"
+    },
+    {
+      "kind": "register",
+      "repo": "lic",
+      "path": "lic/docs/verification/provability-gaps.md",
+      "note": "G-par row"
+    }
+  ],
+  "notes": [
+    "Cycle 7 focus: G-par disjoint_elem constant-index policy asymmetry only.",
+    "Retest: cycle-3 grid[i][0] claim falsified via good_disjoint_parallel.li."
+  ]
+}
