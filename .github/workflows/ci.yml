@@ -1,0 +1,105 @@
+# Research whitepapers CI — validates artifacts.json, README paths, and index sync.
+# Adapted from lic/scripts/templates/github-repo/ci.yml (docs-only repo; no lic build).
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/checkout@v6
+        with:
+          repository: li-langverse/li-cursor-agents
+          path: li-cursor-agents
+          ref: main
+
+      - name: Validate whitepaper artifacts
+        run: |
+          set -euo pipefail
+          python3 <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+
+          root = Path(".")
+          required = ("goal_id", "slug", "title", "agent", "run_id", "validity_grade")
+          errors: list[str] = []
+          count = 0
+          for artifacts in sorted(root.glob("whitepapers/**/artifacts.json")):
+              count += 1
+              try:
+                  data = json.loads(artifacts.read_text(encoding="utf-8"))
+              except json.JSONDecodeError as exc:
+                  errors.append(f"{artifacts}: invalid JSON — {exc}")
+                  continue
+              missing = [k for k in required if not data.get(k)]
+              if missing:
+                  errors.append(f"{artifacts}: missing keys {missing}")
+              readme = artifacts.parent / "README.md"
+              if not readme.is_file():
+                  errors.append(f"{artifacts}: missing README.md")
+          if count == 0:
+              errors.append("no whitepapers/**/artifacts.json found")
+          if errors:
+              print("\n".join(errors), file=sys.stderr)
+              sys.exit(1)
+          print(f"Validated {count} whitepaper artifact(s)")
+          PY
+          test -f index.yaml
+          test -f SCAN.md
+          test -f templates/whitepaper-template.md
+
+      - name: Rebuild index (must match committed files)
+        env:
+          LI_RESEARCH_FINDINGS_ROOT: ${{ github.workspace }}
+        run: |
+          set -euo pipefail
+          cp index.yaml index.yaml.committed
+          cp SCAN.md SCAN.md.committed
+          cd li-cursor-agents
+          chmod +x scripts/publish-research-whitepaper.sh
+          ./scripts/publish-research-whitepaper.sh
+          cd ..
+          python3 <<'PY'
+          import difflib
+          import re
+          import sys
+          from pathlib import Path
+
+          def norm_index(text: str) -> str:
+              return re.sub(r"^updated_at:.*$", "updated_at: normalized", text, flags=re.M)
+
+          def norm_scan(text: str) -> str:
+              return re.sub(r"^_Updated:.*$", "_Updated: normalized", text, flags=re.M)
+
+          failed = False
+          for name, norm in (("index.yaml", norm_index), ("SCAN.md", norm_scan)):
+              committed = norm(Path(f"{name}.committed").read_text(encoding="utf-8"))
+              rebuilt = norm(Path(name).read_text(encoding="utf-8"))
+              if committed == rebuilt:
+                  continue
+              failed = True
+              print(f"{name} out of sync with whitepapers/**/artifacts.json", file=sys.stderr)
+              for line in difflib.unified_diff(
+                  committed.splitlines(),
+                  rebuilt.splitlines(),
+                  fromfile=f"committed/{name}",
+                  tofile=f"rebuilt/{name}",
+                  lineterm="",
+              ):
+                  print(line, file=sys.stderr)
+          if failed:
+              sys.exit(1)
+          print("index.yaml and SCAN.md match catalog (timestamps ignored)")
+          PY
