@@ -1,0 +1,49 @@
+{
+  "schema": "li_whitepaper_artifacts_v1",
+  "goal_id": "provability_holes",
+  "slug": "prov-r0-cycle2-mat2-codegen-drift",
+  "title": "Proof holes — cycle 2 (mat2 @ codegen vs Lean eval)",
+  "agent": "proof_gap_researcher",
+  "run_id": "c8f2a91d-4e6b-4a1c-9f3d-202605291005",
+  "generated_at": "2026-05-29T10:30:00Z",
+  "domains": ["ecosystem"],
+  "ph_ids": ["PH-2e", "PH-2f"],
+  "validity_grade": "B",
+  "status": "active",
+  "markdown_path": "whitepapers/2026-05/provability_holes/prov-r0-cycle2-mat2-codegen-drift/README.md",
+  "evidence": [
+    {
+      "type": "session_digest",
+      "path": "lic/docs/ecosystem/research-sessions/provability_holes-cycle2-mat2-codegen.md"
+    },
+    {
+      "type": "li_tests",
+      "path": "lic/li-tests/math_linalg/golden_mat2_at2_float.li",
+      "command": "./scripts/verify-math-physics-goldens.sh"
+    },
+    {
+      "type": "li_tests",
+      "path": "lic/li-tests/contracts_verify/linalg_mat2_at2_float_closed.li",
+      "command": "lic build (prove_lean_ok)"
+    },
+    {
+      "type": "compiler",
+      "path": "lic/compiler/codegen/emit.cpp",
+      "note": "ArrayMatMul2DF64 IKJ"
+    },
+    {
+      "type": "semantics",
+      "path": "lic/docs/semantics/Discharge.lean",
+      "note": "mat2_at2_eval"
+    },
+    {
+      "type": "proof_db",
+      "path": "lic/proof-database/discrepancies.json",
+      "note": "disc-mat2-trusted-vs-mir"
+    }
+  ],
+  "notes": [
+    "Cycle 2 focus: mat2_codegen_eval_drift only.",
+    "Added runtime golden; no trusted.lean edits."
+  ]
+}

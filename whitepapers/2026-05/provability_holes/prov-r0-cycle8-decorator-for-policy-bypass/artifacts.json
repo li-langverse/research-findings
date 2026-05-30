@@ -1,0 +1,36 @@
+{
+  "goal_id": "provability_holes",
+  "agent": "proof_gap_researcher",
+  "run_id": "proof_gap_researcher-2026-05-29-decorator-for-policy",
+  "title": "Proof holes — cycle 8 (G-par/G-dec decorator-for policy bypass)",
+  "validity_grade": "B",
+  "artifacts": [
+    {
+      "kind": "specimen",
+      "repo": "lic",
+      "path": "lic/li-tests/decorators/parallel_decorator_mut_capture_outer.li",
+      "note": "unsound outer var mutation; passes lic check today"
+    },
+    {
+      "kind": "specimen",
+      "repo": "lic",
+      "path": "lic/li-tests/decorators/parallel_decorator_borrow_mut_across_iters.li",
+      "note": "unsound borrow mut; passes lic check today"
+    },
+    {
+      "kind": "tooling",
+      "repo": "lic",
+      "path": "lic/li-tests/tooling/parallel_decorator_policy_capture_gap.sh"
+    },
+    {
+      "kind": "register",
+      "repo": "lic",
+      "path": "lic/docs/verification/provability-gaps.md",
+      "note": "G-par, G-dec rows"
+    }
+  ],
+  "notes": [
+    "Cycle 8 focus: policy bypass on @parallel for (capture + borrow), not codegen.",
+    "Builds on cycle 5 elaboration gap and cycle 7 disjoint_elem constant-index hole."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "li_whitepaper_artifacts_v1",
+  "goal_id": "provability_holes",
+  "slug": "prov-r0-cycle3-disjoint-row-policy-gap",
+  "title": "Proof holes — cycle 3 (G-par disjoint_row policy soundness)",
+  "agent": "proof_gap_researcher",
+  "run_id": "proof_gap_researcher-2026-05-29-disjoint-row",
+  "generated_at": "2026-05-29T10:45:00Z",
+  "domains": ["ecosystem"],
+  "ph_ids": ["PH-2e", "PH-2f"],
+  "validity_grade": "B",
+  "status": "active",
+  "markdown_path": "whitepapers/2026-05/provability_holes/prov-r0-cycle3-disjoint-row-policy-gap/README.md",
+  "evidence": [
+    {
+      "type": "session_digest",
+      "path": "lic/docs/ecosystem/research-sessions/provability_holes-cycle3-disjoint-row-policy.md"
+    },
+    {
+      "type": "li_tests",
+      "path": "lic/li-tests/race_shared_memory/disjoint_row_writes_row_i.li",
+      "command": "lic check (exit 0 — known gap)"
+    },
+    {
+      "type": "li_tests",
+      "path": "lic/li-tests/race_shared_memory/false_disjoint_proof.li",
+      "command": "lic check (E0350 — caught)"
+    },
+    {
+      "type": "tooling",
+      "path": "lic/li-tests/tooling/policy_disjoint_row_soundness.sh"
+    },
+    {
+      "type": "compiler",
+      "path": "lic/compiler/types/policy_module.cpp",
+      "note": "par_body_writes_constant_grid00 lines 85-108, 183-188"
+    },
+    {
+      "type": "register",
+      "path": "lic/docs/verification/provability-gaps.md",
+      "note": "G-par row"
+    }
+  ],
+  "notes": [
+    "Cycle 3 focus: G-par disjoint_row policy soundness only.",
+    "No trusted.lean edits."
+  ]
+}

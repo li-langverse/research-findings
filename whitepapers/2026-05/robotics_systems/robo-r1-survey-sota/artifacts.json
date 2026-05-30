@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "goal_id": "robotics_systems",
+  "agent": "goal_researcher",
+  "run_id": "goal_researcher-f32363a0-c1-2026-05-28",
+  "generated_at": "2026-05-28T10:03:49Z",
+  "slug": "robo-r1-survey-sota",
+  "title": "Robotics SOTA survey — planning, control, perception mapped to Li",
+  "domains": ["robotics", "scientific_computing", "ai"],
+  "validity_grade": "verified",
+  "status": "active",
+  "links": ["https://li-langverse.github.io/benchmarks/"],
+  "markdown_path": "whitepapers/2026-05/robotics_systems/robo-r1-survey-sota/README.md",
+  "snippets_dir": "whitepapers/2026-05/robotics_systems/robo-r1-survey-sota/snippets"
+}
+

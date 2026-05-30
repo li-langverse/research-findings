@@ -1,0 +1,52 @@
+{
+  "schema": "li_whitepaper_artifacts_v1",
+  "goal_id": "provability_holes",
+  "slug": "prov-r0-cycle1-proof-gap-digest",
+  "title": "Proof holes — cycle 1 digest (register + contract tiers)",
+  "agent": "proof_gap_researcher",
+  "run_id": "97b0a884-e513-4a30-9793-5493bc1aed9e",
+  "generated_at": "2026-05-28T20:30:00Z",
+  "domains": ["ecosystem"],
+  "ph_ids": ["PH-2e", "PH-2f"],
+  "validity_grade": "B",
+  "status": "active",
+  "markdown_path": "whitepapers/2026-05/provability_holes/prov-r0-cycle1-proof-gap-digest/README.md",
+  "evidence": [
+    {
+      "type": "session_digest",
+      "path": "lic/docs/ecosystem/research-sessions/provability_holes-cycle.md"
+    },
+    {
+      "type": "gap_register",
+      "path": "lic/docs/verification/provability-gaps.md"
+    },
+    {
+      "type": "li_tests",
+      "path": "lic/li-tests/contracts_verify/false_ensures_strict_reject.li",
+      "command": "lic build (expect fail)"
+    },
+    {
+      "type": "li_tests",
+      "path": "lic/li-tests/contracts_verify/false_ensures_allow_open_ok.li",
+      "command": "lic build --allow-open-vc (expect ok)"
+    },
+    {
+      "type": "tooling",
+      "path": "lic/li-tests/tooling/lint_manifest_no_duplicate_keys.sh"
+    },
+    {
+      "type": "compiler",
+      "path": "lic/compiler/lic/main.cpp",
+      "note": "open VC gate + lake verify"
+    },
+    {
+      "type": "bench_harness",
+      "path": "lic/benchmarks/harness/verify.py",
+      "note": "tier-0 uses --allow-open-vc --no-lean-verify"
+    }
+  ],
+  "notes": [
+    "Cycle 1 complete: read_register, contract_tier, synthesize_step.",
+    "No trusted.lean edits."
+  ]
+}

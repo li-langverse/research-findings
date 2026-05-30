@@ -1,0 +1,99 @@
+{
+  "catalog": "/home/s4il0r/Documents/Cursor/li-langverse/benchmarks/catalog.toml",
+  "robo_count": 5,
+  "robo_ids": [
+    "robo_ik_jacobian",
+    "robo_multibody_step",
+    "robo_plan_prm",
+    "robo_plan_rrt",
+    "robo_traj_opt"
+  ],
+  "rows": [
+    {
+      "category": "physics",
+      "id": "robo_ik_jacobian",
+      "metric": "wall_time",
+      "package": "lic",
+      "path": "benchmarks/tier1_micro/num_integ_semi_implicit",
+      "ph_ids": [
+        "PH-5b"
+      ],
+      "pillar": "physics",
+      "repo": "lic",
+      "size_label": "harness pending",
+      "threshold_ratio_cpp": 1.2,
+      "tier": 2,
+      "validity_required": true,
+      "variant": "algo_registry"
+    },
+    {
+      "category": "physics",
+      "id": "robo_multibody_step",
+      "metric": "wall_time",
+      "package": "lic",
+      "path": "benchmarks/tier1_micro/num_root_newton",
+      "ph_ids": [
+        "PH-5b"
+      ],
+      "pillar": "physics",
+      "repo": "lic",
+      "size_label": "harness pending",
+      "threshold_ratio_cpp": 1.2,
+      "tier": 2,
+      "validity_required": true,
+      "variant": "algo_registry"
+    },
+    {
+      "category": "physics",
+      "id": "robo_plan_prm",
+      "metric": "wall_time",
+      "package": "lic",
+      "path": "benchmarks/tier1_micro/num_opt_bfgs",
+      "ph_ids": [
+        "PH-5b"
+      ],
+      "pillar": "physics",
+      "repo": "lic",
+      "size_label": "harness pending",
+      "threshold_ratio_cpp": 1.2,
+      "tier": 2,
+      "validity_required": true,
+      "variant": "algo_registry"
+    },
+    {
+      "category": "physics",
+      "id": "robo_plan_rrt",
+      "metric": "wall_time",
+      "package": "lic",
+      "path": "benchmarks/tier1_micro/num_opt_line_search",
+      "ph_ids": [
+        "PH-5b"
+      ],
+      "pillar": "physics",
+      "repo": "lic",
+      "size_label": "harness pending",
+      "threshold_ratio_cpp": 1.2,
+      "tier": 2,
+      "validity_required": true,
+      "variant": "algo_registry"
+    },
+    {
+      "category": "physics",
+      "id": "robo_traj_opt",
+      "metric": "wall_time",
+      "package": "lic",
+      "path": "benchmarks/tier1_micro/num_quadrature_gauss",
+      "ph_ids": [
+        "PH-5b"
+      ],
+      "pillar": "physics",
+      "repo": "lic",
+      "size_label": "harness pending",
+      "threshold_ratio_cpp": 1.2,
+      "tier": 2,
+      "validity_required": true,
+      "variant": "algo_registry"
+    }
+  ]
+}
+
