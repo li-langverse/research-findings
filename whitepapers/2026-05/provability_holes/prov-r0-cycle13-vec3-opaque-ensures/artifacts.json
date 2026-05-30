@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "goal_id": "provability_holes",
+  "agent": "proof_gap_researcher",
+  "run_id": "proof_gap_researcher-2026-05-30-vec3-opaque-ensures",
+  "generated_at": "2026-05-30T05:40:00Z",
+  "slug": "prov-r0-cycle13-vec3-opaque-ensures",
+  "title": "Proof holes — cycle 13 (G-vc vec3 opaque ensures)",
+  "domains": ["ecosystem"],
+  "validity_grade": "verified",
+  "status": "active",
+  "links": [
+    "lic/docs/ecosystem/research-sessions/provability_holes-cycle13-vec3-opaque-ensures.md",
+    "lic/docs/verification/provability-gaps.md",
+    "lic/li-tests/tooling/vec3_dot_ensures_lean_gap.sh"
+  ],
+  "markdown_path": "whitepapers/2026-05/provability_holes/prov-r0-cycle13-vec3-opaque-ensures/README.md",
+  "snippets_dir": "whitepapers/2026-05/provability_holes/prov-r0-cycle13-vec3-opaque-ensures/snippets"
+}

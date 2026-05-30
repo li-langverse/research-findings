@@ -1,5 +1,5 @@
 version: 1
-updated_at: "2026-05-30T05:33:02Z"
+updated_at: "2026-05-30T05:46:13Z"
 whitepapers:
   - goal_id: additive_manufacturing
     slug: add-r0-vertical-seed
@@ -241,6 +241,18 @@ whitepapers:
     status: active
     markdown_path: whitepapers/2026-05/provability_holes/prov-r0-cycle11-bounds-guard-vc-stub/README.md
     artifacts_path: whitepapers/2026-05/provability_holes/prov-r0-cycle11-bounds-guard-vc-stub/artifacts.json
+  - goal_id: provability_holes
+    slug: prov-r0-cycle13-vec3-opaque-ensures
+    path: whitepapers/2026-05/provability_holes/prov-r0-cycle13-vec3-opaque-ensures
+    title: "Proof holes — cycle 13 (G-vc vec3 opaque ensures)"
+    agent: proof_gap_researcher
+    run_id: proof_gap_researcher-2026-05-30-vec3-opaque-ensures
+    generated_at: "2026-05-30T05:40:00Z"
+    domains: [ecosystem]
+    validity_grade: verified
+    status: active
+    markdown_path: whitepapers/2026-05/provability_holes/prov-r0-cycle13-vec3-opaque-ensures/README.md
+    artifacts_path: whitepapers/2026-05/provability_holes/prov-r0-cycle13-vec3-opaque-ensures/artifacts.json
   - goal_id: provability_holes
     slug: prov-r0-cycle2-mat2-codegen-drift
     path: whitepapers/2026-05/provability_holes/prov-r0-cycle2-mat2-codegen-drift

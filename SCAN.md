@@ -1,9 +1,10 @@
 # Research whitepapers — quick scan
 
-_Updated: 2026-05-30T05:33:02Z_ · rebuild: `li-cursor-agents/scripts/publish-research-whitepaper.sh`
+_Updated: 2026-05-30T05:46:13Z_ · rebuild: `li-cursor-agents/scripts/publish-research-whitepaper.sh`
 
 | Status | Grade | Goal | Title | Agent | Run | Path |
 |--------|-------|------|-------|-------|-----|------|
+| active | verified | `provability_holes` | Proof holes — cycle 13 (G-vc vec3 opaque ensures) | proof_gap_researcher | `proof_gap_researcher-2026-05-30-vec3-opaque-ensures` | `whitepapers/2026-05/provability_holes/prov-r0-cycle13-vec3-opaque-ensures` |
 | active | B | `provability_holes` | Proof holes — cycle 11 (G-bnd guarded refinement VC stub) | proof_gap_researcher | `proof_gap_researcher-2026-05-30-bounds-guard-vc` | `whitepapers/2026-05/provability_holes/prov-r0-cycle11-bounds-guard-vc-stub` |
 | active | B | `provability_holes` | Proof holes — cycle 5 (G-dec @parallel on plain for) | proof_gap_researcher | `proof_gap_researcher-2026-05-29-parallel-decorator-for` | `whitepapers/2026-05/provability_holes/prov-r0-cycle5-parallel-decorator-for-gap` |
 | active | B | `provability_holes` | Proof holes — cycle 4 (G-bnd refinement Lean / codegen stub) | proof_gap_researcher | `proof_gap_researcher-2026-05-29-bounds-refinement` | `whitepapers/2026-05/provability_holes/prov-r0-cycle4-bounds-refinement-vc-gap` |
