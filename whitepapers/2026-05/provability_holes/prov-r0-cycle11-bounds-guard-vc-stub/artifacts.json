@@ -1,0 +1,53 @@
+{
+  "goal_id": "provability_holes",
+  "agent": "proof_gap_researcher",
+  "run_id": "proof_gap_researcher-2026-05-30-bounds-guard-vc",
+  "slug": "prov-r0-cycle11-bounds-guard-vc-stub",
+  "title": "Proof holes — cycle 11 (G-bnd guarded refinement VC stub)",
+  "validity_grade": "B",
+  "generated_at": "2026-05-30T05:06:00Z",
+  "domains": ["ecosystem"],
+  "status": "active",
+  "markdown_path": "whitepapers/2026-05/provability_holes/prov-r0-cycle11-bounds-guard-vc-stub/README.md",
+  "artifacts": [
+    {
+      "kind": "specimen",
+      "repo": "lic",
+      "path": "lic/li-tests/contracts_verify/index_refinement.li",
+      "note": "Index10 erases to Int in AutoVC"
+    },
+    {
+      "kind": "specimen",
+      "repo": "lic",
+      "path": "lic/li-tests/contracts_verify/refinement_guard_ok.li",
+      "note": "guarded call-site refine VC stubs True"
+    },
+    {
+      "kind": "tooling",
+      "repo": "lic",
+      "path": "lic/li-tests/tooling/bounds_refinement_lean_gap.sh"
+    },
+    {
+      "kind": "compiler",
+      "repo": "lic",
+      "path": "lic/compiler/verify/vc_emit_lean.cpp",
+      "note": "546-551 witnessed refine collapse"
+    },
+    {
+      "kind": "codegen",
+      "repo": "lic",
+      "path": "lic/compiler/codegen/emit.cpp",
+      "note": "916-922 inbounds GEP, no li_bounds_fail call"
+    },
+    {
+      "kind": "register",
+      "repo": "lic",
+      "path": "lic/docs/verification/provability-gaps.md",
+      "note": "G-bnd, P-refine"
+    }
+  ],
+  "notes": [
+    "Cycle 11 extends cycle 4: lands CI guard + verifies guarded branch refine also stubs True.",
+    "Retest: sqrt_open_bound still blocks default lic build (contract tier B)."
+  ]
+}

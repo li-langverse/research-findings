@@ -1,5 +1,5 @@
 version: 1
-updated_at: "2026-05-30T04:47:40Z"
+updated_at: "2026-05-30T05:33:02Z"
 whitepapers:
   - goal_id: additive_manufacturing
     slug: add-r0-vertical-seed
@@ -217,6 +217,30 @@ whitepapers:
     status: active
     markdown_path: whitepapers/2026-05/provability_holes/prov-r0-cycle1-proof-gap-digest/README.md
     artifacts_path: whitepapers/2026-05/provability_holes/prov-r0-cycle1-proof-gap-digest/artifacts.json
+  - goal_id: provability_holes
+    slug: prov-r0-cycle10-seam-proxy-net-effect
+    path: whitepapers/2026-05/provability_holes/prov-r0-cycle10-seam-proxy-net-effect
+    title: "Proof holes — cycle 10 (G-net trusted proxy seam Net effect omission)"
+    agent: proof_gap_researcher
+    run_id: proof_gap_researcher-1780118603001
+    generated_at: ""
+    domains: []
+    validity_grade: B
+    status: active
+    markdown_path: whitepapers/2026-05/provability_holes/prov-r0-cycle10-seam-proxy-net-effect/README.md
+    artifacts_path: whitepapers/2026-05/provability_holes/prov-r0-cycle10-seam-proxy-net-effect/artifacts.json
+  - goal_id: provability_holes
+    slug: prov-r0-cycle11-bounds-guard-vc-stub
+    path: whitepapers/2026-05/provability_holes/prov-r0-cycle11-bounds-guard-vc-stub
+    title: "Proof holes — cycle 11 (G-bnd guarded refinement VC stub)"
+    agent: proof_gap_researcher
+    run_id: proof_gap_researcher-2026-05-30-bounds-guard-vc
+    generated_at: "2026-05-30T05:06:00Z"
+    domains: [ecosystem]
+    validity_grade: B
+    status: active
+    markdown_path: whitepapers/2026-05/provability_holes/prov-r0-cycle11-bounds-guard-vc-stub/README.md
+    artifacts_path: whitepapers/2026-05/provability_holes/prov-r0-cycle11-bounds-guard-vc-stub/artifacts.json
   - goal_id: provability_holes
     slug: prov-r0-cycle2-mat2-codegen-drift
     path: whitepapers/2026-05/provability_holes/prov-r0-cycle2-mat2-codegen-drift

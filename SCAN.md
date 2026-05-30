@@ -1,9 +1,10 @@
 # Research whitepapers — quick scan
 
-_Updated: 2026-05-30T04:47:40Z_ · rebuild: `li-cursor-agents/scripts/publish-research-whitepaper.sh`
+_Updated: 2026-05-30T05:33:02Z_ · rebuild: `li-cursor-agents/scripts/publish-research-whitepaper.sh`
 
 | Status | Grade | Goal | Title | Agent | Run | Path |
 |--------|-------|------|-------|-------|-----|------|
+| active | B | `provability_holes` | Proof holes — cycle 11 (G-bnd guarded refinement VC stub) | proof_gap_researcher | `proof_gap_researcher-2026-05-30-bounds-guard-vc` | `whitepapers/2026-05/provability_holes/prov-r0-cycle11-bounds-guard-vc-stub` |
 | active | B | `provability_holes` | Proof holes — cycle 5 (G-dec @parallel on plain for) | proof_gap_researcher | `proof_gap_researcher-2026-05-29-parallel-decorator-for` | `whitepapers/2026-05/provability_holes/prov-r0-cycle5-parallel-decorator-for-gap` |
 | active | B | `provability_holes` | Proof holes — cycle 4 (G-bnd refinement Lean / codegen stub) | proof_gap_researcher | `proof_gap_researcher-2026-05-29-bounds-refinement` | `whitepapers/2026-05/provability_holes/prov-r0-cycle4-bounds-refinement-vc-gap` |
 | active | B | `provability_holes` | Proof holes — cycle 3 (G-par disjoint_row policy soundness) | proof_gap_researcher | `proof_gap_researcher-2026-05-29-disjoint-row` | `whitepapers/2026-05/provability_holes/prov-r0-cycle3-disjoint-row-policy-gap` |
@@ -34,6 +35,7 @@ _Updated: 2026-05-30T04:47:40Z_ · rebuild: `li-cursor-agents/scripts/publish-re
 | active | study-only | `simulation_techniques` | Simulation science — vertical seed (study-only) | numerics_researcher | `seed-sim-r0-vertical-seed-2026-05-26` | `whitepapers/2026-05/simulation_techniques/sim-r0-vertical-seed` |
 | active | study-only | `chem_sim_algorithms` | QM stub SCF — basis-size cost/accuracy scaling (placeholder) | numerics_researcher | `seed-chem-r1-2026-05-25` | `whitepapers/2026-05/chem_sim_algorithms/chem-r1-basis-size-scaling` |
 | active | study-only | `md_sim_algorithms` | MD Lennard-Jones — CFL and neighbor-skin stability matrix (placeholder) | numerics_researcher | `seed-md-r1-2026-05-25` | `whitepapers/2026-05/md_sim_algorithms/md-r1-stability-matrix` |
+| active | B | `provability_holes` | Proof holes — cycle 10 (G-net trusted proxy seam Net effect omission) | proof_gap_researcher | `proof_gap_researcher-1780118603001` | `whitepapers/2026-05/provability_holes/prov-r0-cycle10-seam-proxy-net-effect` |
 | active | B | `provability_holes` | Proof holes — cycle 7 (G-par disjoint_elem constant index) | proof_gap_researcher | `proof_gap_researcher-2026-05-29-disjoint-elem-constant` | `whitepapers/2026-05/provability_holes/prov-r0-cycle7-disjoint-elem-constant-index-gap` |
 | active | B | `provability_holes` | Proof holes — cycle 8 (G-par/G-dec decorator-for policy bypass) | proof_gap_researcher | `proof_gap_researcher-2026-05-29-decorator-for-policy` | `whitepapers/2026-05/provability_holes/prov-r0-cycle8-decorator-for-policy-bypass` |
 | active | B | `provability_holes` | Proof holes — cycle 9 (P-linalg mat2 loop witness + contract tiers) | proof_gap_researcher | `proof_gap_researcher-2026-05-30-mat2-loop-witness` | `whitepapers/2026-05/provability_holes/prov-r0-cycle9-mat2-loop-witness-gap` |

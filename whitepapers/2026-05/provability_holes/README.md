@@ -7,6 +7,7 @@
 | [prov-r0-cycle7-disjoint-elem-constant-index-gap](prov-r0-cycle7-disjoint-elem-constant-index-gap/README.md) | `proof_gap_researcher-2026-05-29-disjoint-elem-constant` | active (grade B) |
 | [prov-r0-cycle8-decorator-for-policy-bypass](prov-r0-cycle8-decorator-for-policy-bypass/README.md) | `proof_gap_researcher-2026-05-29-decorator-for-policy` | active (grade B) |
 | [prov-r0-cycle10-seam-proxy-net-effect](prov-r0-cycle10-seam-proxy-net-effect/README.md) | `proof_gap_researcher-1780118603001` | active (grade B) |
+| [prov-r0-cycle11-bounds-guard-vc-stub](prov-r0-cycle11-bounds-guard-vc-stub/README.md) | `proof_gap_researcher-2026-05-30-bounds-guard-vc` | active (grade B) |
 
 **Canonical register:** [lic/docs/verification/provability-gaps.md](https://github.com/li-langverse/lic/blob/main/docs/verification/provability-gaps.md)  
 **Session digest:** [lic/docs/ecosystem/research-sessions/provability_holes-cycle.md](https://github.com/li-langverse/lic/blob/main/docs/ecosystem/research-sessions/provability_holes-cycle.md)
