@@ -1,0 +1,58 @@
+{
+  "goal_id": "provability_holes",
+  "agent": "proof_gap_researcher",
+  "run_id": "proof_gap_researcher-2026-05-30-dot4-loop-ensures-stub",
+  "slug": "prov-r0-cycle24-dot4-loop-ensures-stub",
+  "title": "Proof holes — cycle 24 (P-linalg dot4 loop ensures True stub)",
+  "validity_grade": "B",
+  "generated_at": "2026-05-30T12:00:00Z",
+  "domains": ["ecosystem", "scientific_computing"],
+  "status": "active",
+  "markdown_path": "whitepapers/2026-05/provability_holes/prov-r0-cycle24-dot4-loop-ensures-stub/README.md",
+  "artifacts": [
+    {
+      "kind": "specimen",
+      "repo": "lic",
+      "path": "lic/li-tests/contracts_verify/linalg_dot4_int_loop_open.li",
+      "note": "loop witness; ensures True in AutoVC"
+    },
+    {
+      "kind": "specimen",
+      "repo": "lic",
+      "path": "lic/li-tests/contracts_verify/linalg_mat2_at2_float_closed.li",
+      "note": "contrast: mat2_at2_float_spec wired"
+    },
+    {
+      "kind": "tooling",
+      "repo": "lic",
+      "path": "lic/li-tests/tooling/dot4_loop_ensures_lean_stub_gap.sh"
+    },
+    {
+      "kind": "compiler",
+      "repo": "lic",
+      "path": "lic/compiler/verify/vc_emit_lean.cpp",
+      "note": "351-354 witnessed True; 401-406 mat2 contrast"
+    },
+    {
+      "kind": "compiler",
+      "repo": "lic",
+      "path": "lic/compiler/verify/vc_witness.cpp",
+      "note": "459-492 witness_dot4_int_loop_impl"
+    },
+    {
+      "kind": "lean",
+      "repo": "lic",
+      "path": "lic/docs/semantics/Discharge.lean",
+      "note": "24-32 dot4_int_spec / dot4_int_loop_eval_spec"
+    },
+    {
+      "kind": "digest",
+      "repo": "benchmarks",
+      "path": "benchmarks/data/digest/proof_gap_researcher-2026-05-30-dot4-loop-ensures-stub.md"
+    }
+  ],
+  "notes": [
+    "Cycle 24: clarifies linalg_dot4_int_loop_open _open suffix; lands CI guard for #472 P-linalg certificate gap.",
+    "Retest: mat2 control specimen still emits Li.Discharge.mat2_at2_float_spec."
+  ]
+}

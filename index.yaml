@@ -1,5 +1,5 @@
 version: 1
-updated_at: "2026-05-30T05:46:13Z"
+updated_at: "2026-05-30T11:59:35Z"
 whitepapers:
   - goal_id: additive_manufacturing
     slug: add-r0-vertical-seed
@@ -265,6 +265,18 @@ whitepapers:
     status: active
     markdown_path: whitepapers/2026-05/provability_holes/prov-r0-cycle2-mat2-codegen-drift/README.md
     artifacts_path: whitepapers/2026-05/provability_holes/prov-r0-cycle2-mat2-codegen-drift/artifacts.json
+  - goal_id: provability_holes
+    slug: prov-r0-cycle24-dot4-loop-ensures-stub
+    path: whitepapers/2026-05/provability_holes/prov-r0-cycle24-dot4-loop-ensures-stub
+    title: "Proof holes — cycle 24 (P-linalg dot4 loop ensures True stub)"
+    agent: proof_gap_researcher
+    run_id: proof_gap_researcher-2026-05-30-dot4-loop-ensures-stub
+    generated_at: "2026-05-30T12:00:00Z"
+    domains: [ecosystem, scientific_computing]
+    validity_grade: B
+    status: active
+    markdown_path: whitepapers/2026-05/provability_holes/prov-r0-cycle24-dot4-loop-ensures-stub/README.md
+    artifacts_path: whitepapers/2026-05/provability_holes/prov-r0-cycle24-dot4-loop-ensures-stub/artifacts.json
   - goal_id: provability_holes
     slug: prov-r0-cycle3-disjoint-row-policy-gap
     path: whitepapers/2026-05/provability_holes/prov-r0-cycle3-disjoint-row-policy-gap
