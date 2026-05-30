@@ -1,0 +1,42 @@
+{
+  "goal_id": "provability_holes",
+  "agent": "proof_gap_researcher",
+  "run_id": "proof_gap_researcher-1780118603001",
+  "title": "Proof holes — cycle 10 (G-net trusted proxy seam Net effect omission)",
+  "validity_grade": "B",
+  "artifacts": [
+    {
+      "kind": "specimen",
+      "repo": "lic",
+      "path": "lic/li-tests/net_trusted/seam_proxy_epoll_missing_net.li",
+      "note": "proxy epoll callable without raises Net"
+    },
+    {
+      "kind": "control",
+      "repo": "lic",
+      "path": "lic/li-tests/net_trusted/seam_missing_net.li",
+      "note": "tcp_listen Net propagation enforced"
+    },
+    {
+      "kind": "tooling",
+      "repo": "lic",
+      "path": "lic/li-tests/tooling/seam_proxy_net_effect_gap.sh"
+    },
+    {
+      "kind": "c_seam",
+      "repo": "lic",
+      "path": "lic/runtime/li_rt_net.c",
+      "note": "httpd_li_proxy_client_epoll_i:6227"
+    },
+    {
+      "kind": "register",
+      "repo": "lic",
+      "path": "lic/docs/verification/provability-gaps.md",
+      "note": "G-net, G-trust"
+    }
+  ],
+  "notes": [
+    "Cycle 10: 34 httpd_li_proxy_* seam procs lack raises Net; tcp_listen control still OK.",
+    "Human RFC required before seam.li effect annotation bulk fix."
+  ]
+}
