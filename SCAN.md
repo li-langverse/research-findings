@@ -1,6 +1,6 @@
 # Research whitepapers — quick scan
 
-_Updated: 2026-05-29T15:26:29Z_ · rebuild: `li-cursor-agents/scripts/publish-research-whitepaper.sh`
+_Updated: 2026-05-30T04:47:40Z_ · rebuild: `li-cursor-agents/scripts/publish-research-whitepaper.sh`
 
 | Status | Grade | Goal | Title | Agent | Run | Path |
 |--------|-------|------|-------|-------|-----|------|
@@ -36,3 +36,4 @@ _Updated: 2026-05-29T15:26:29Z_ · rebuild: `li-cursor-agents/scripts/publish-re
 | active | study-only | `md_sim_algorithms` | MD Lennard-Jones — CFL and neighbor-skin stability matrix (placeholder) | numerics_researcher | `seed-md-r1-2026-05-25` | `whitepapers/2026-05/md_sim_algorithms/md-r1-stability-matrix` |
 | active | B | `provability_holes` | Proof holes — cycle 7 (G-par disjoint_elem constant index) | proof_gap_researcher | `proof_gap_researcher-2026-05-29-disjoint-elem-constant` | `whitepapers/2026-05/provability_holes/prov-r0-cycle7-disjoint-elem-constant-index-gap` |
 | active | B | `provability_holes` | Proof holes — cycle 8 (G-par/G-dec decorator-for policy bypass) | proof_gap_researcher | `proof_gap_researcher-2026-05-29-decorator-for-policy` | `whitepapers/2026-05/provability_holes/prov-r0-cycle8-decorator-for-policy-bypass` |
+| active | B | `provability_holes` | Proof holes — cycle 9 (P-linalg mat2 loop witness + contract tiers) | proof_gap_researcher | `proof_gap_researcher-2026-05-30-mat2-loop-witness` | `whitepapers/2026-05/provability_holes/prov-r0-cycle9-mat2-loop-witness-gap` |

@@ -1,0 +1,35 @@
+{
+  "goal_id": "provability_holes",
+  "agent": "proof_gap_researcher",
+  "run_id": "proof_gap_researcher-2026-05-30-mat2-loop-witness",
+  "title": "Proof holes — cycle 9 (P-linalg mat2 loop witness + contract tiers)",
+  "validity_grade": "B",
+  "artifacts": [
+    {
+      "kind": "specimen",
+      "repo": "lic",
+      "path": "lic/li-tests/contracts_verify/linalg_mat2_int_loop_no_witness.li",
+      "note": "IKJ loop; open vc_mat2_loop_entry00_ensures_0"
+    },
+    {
+      "kind": "tooling",
+      "repo": "lic",
+      "path": "lic/li-tests/tooling/p_linalg_mat2_loop_witness_gap.sh"
+    },
+    {
+      "kind": "tooling",
+      "repo": "lic",
+      "path": "lic/li-tests/tooling/verify_ok_manifest_tier_gap.sh"
+    },
+    {
+      "kind": "register",
+      "repo": "lic",
+      "path": "lic/docs/verification/provability-gaps.md",
+      "note": "G-vc, G-test-verify, G-math"
+    }
+  ],
+  "notes": [
+    "Cycle 9: P-linalg loop matmul witness absent; G-test-verify tier honesty encoded in CI.",
+    "Builds on cycle 2 mat2 @ eval vs MIR (deferred preservation)."
+  ]
+}

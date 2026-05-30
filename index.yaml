@@ -1,5 +1,5 @@
 version: 1
-updated_at: "2026-05-29T15:26:29Z"
+updated_at: "2026-05-30T04:47:40Z"
 whitepapers:
   - goal_id: additive_manufacturing
     slug: add-r0-vertical-seed
@@ -289,6 +289,18 @@ whitepapers:
     status: active
     markdown_path: whitepapers/2026-05/provability_holes/prov-r0-cycle8-decorator-for-policy-bypass/README.md
     artifacts_path: whitepapers/2026-05/provability_holes/prov-r0-cycle8-decorator-for-policy-bypass/artifacts.json
+  - goal_id: provability_holes
+    slug: prov-r0-cycle9-mat2-loop-witness-gap
+    path: whitepapers/2026-05/provability_holes/prov-r0-cycle9-mat2-loop-witness-gap
+    title: "Proof holes — cycle 9 (P-linalg mat2 loop witness + contract tiers)"
+    agent: proof_gap_researcher
+    run_id: proof_gap_researcher-2026-05-30-mat2-loop-witness
+    generated_at: ""
+    domains: []
+    validity_grade: B
+    status: active
+    markdown_path: whitepapers/2026-05/provability_holes/prov-r0-cycle9-mat2-loop-witness-gap/README.md
+    artifacts_path: whitepapers/2026-05/provability_holes/prov-r0-cycle9-mat2-loop-witness-gap/artifacts.json
   - goal_id: rl_systems
     slug: rl-r0-vertical-seed
     path: whitepapers/2026-05/rl_systems/rl-r0-vertical-seed
