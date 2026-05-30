@@ -2,9 +2,13 @@
   "schema": "li_whitepaper_artifacts_v1",
   "goal_id": "md_sim_algorithms",
   "slug": "md-r0-sota-survey",
+  "title": "MD algorithms — LAMMPS/GROMACS/OpenMM SOTA survey and Li gap map",
+  "agent": "numerics_researcher",
   "run_id": "numerics_researcher-1779774622783",
   "generated_at": "2026-05-26T06:15:00Z",
+  "domains": ["scientific_computing", "hpc"],
   "validity_grade": "study-only",
+  "status": "active",
   "evidence": [
     {
       "type": "numerics_study",

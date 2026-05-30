@@ -6,7 +6,7 @@
   "generated_at": "2026-05-26T12:00:00Z",
   "slug": "hpc-r0-vertical-seed",
   "title": "Scientific & distributed computing — vertical seed (study-only)",
-  "domains": [hpc, scientific_computing, distributed],
+  "domains": ["hpc", "scientific_computing", "distributed"],
   "validity_grade": "study-only",
   "status": "active",
   "markdown_path": "whitepapers/2026-05/scientific_distributed_computing/hpc-r0-vertical-seed/README.md",

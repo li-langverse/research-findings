@@ -6,7 +6,7 @@
   "generated_at": "2026-05-26T12:00:00Z",
   "slug": "dl-r0-vertical-seed",
   "title": "Deep learning — vertical seed (study-only)",
-  "domains": [ai, deep_learning, scientific_computing],
+  "domains": ["ai", "deep_learning", "scientific_computing"],
   "validity_grade": "study-only",
   "status": "active",
   "markdown_path": "whitepapers/2026-05/deep_learning_systems/dl-r0-vertical-seed/README.md",
