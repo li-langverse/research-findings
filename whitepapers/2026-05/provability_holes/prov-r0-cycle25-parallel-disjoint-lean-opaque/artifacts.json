@@ -1,0 +1,52 @@
+{
+  "goal_id": "provability_holes",
+  "agent": "proof_gap_researcher",
+  "run_id": "proof_gap_researcher-2026-05-30-parallel-disjoint-lean-opaque",
+  "slug": "prov-r0-cycle25-parallel-disjoint-lean-opaque",
+  "title": "Proof holes — cycle 25 (G-par disjoint Lean opaque stubs)",
+  "validity_grade": "B",
+  "generated_at": "2026-05-30T12:45:00Z",
+  "domains": ["ecosystem", "scientific_computing"],
+  "status": "active",
+  "markdown_path": "whitepapers/2026-05/provability_holes/prov-r0-cycle25-parallel-disjoint-lean-opaque/README.md",
+  "artifacts": [
+    {
+      "kind": "specimen",
+      "repo": "lic",
+      "path": "lic/li-tests/race_shared_memory/good_disjoint_parallel.li",
+      "note": "explicit disjoint_row + row_ok; AutoVC True stubs"
+    },
+    {
+      "kind": "specimen",
+      "repo": "lic",
+      "path": "lic/li-tests/decorators/parallel_def_disjoint_inherit.li",
+      "note": "decorator inherit; no par requires VC"
+    },
+    {
+      "kind": "tooling",
+      "repo": "lic",
+      "path": "lic/li-tests/tooling/parallel_disjoint_lean_opaque_gap.sh"
+    },
+    {
+      "kind": "compiler",
+      "repo": "lic",
+      "path": "lic/compiler/verify/vc_emit_lean.cpp",
+      "note": "224-231 abs-only Call; 642-648 _parN walk"
+    },
+    {
+      "kind": "compiler",
+      "repo": "lic",
+      "path": "lic/compiler/types/policy_module.cpp",
+      "note": "174-181 policy disjoint check only"
+    },
+    {
+      "kind": "digest",
+      "repo": "benchmarks",
+      "path": "benchmarks/data/digest/proof_gap_researcher-2026-05-30-parallel-disjoint-lean-opaque.md"
+    }
+  ],
+  "notes": [
+    "Cycle 25: G-par Lean layer for lic#387 — disjoint builtins opaque in AutoVC; complements cycles 3/7 policy holes.",
+    "Retest: check-autovc-open-goals passes despite certificate not encoding disjointness."
+  ]
+}

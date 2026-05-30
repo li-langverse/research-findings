@@ -1,5 +1,5 @@
 version: 1
-updated_at: "2026-05-30T11:59:35Z"
+updated_at: "2026-05-30T12:38:40Z"
 whitepapers:
   - goal_id: additive_manufacturing
     slug: add-r0-vertical-seed
@@ -277,6 +277,18 @@ whitepapers:
     status: active
     markdown_path: whitepapers/2026-05/provability_holes/prov-r0-cycle24-dot4-loop-ensures-stub/README.md
     artifacts_path: whitepapers/2026-05/provability_holes/prov-r0-cycle24-dot4-loop-ensures-stub/artifacts.json
+  - goal_id: provability_holes
+    slug: prov-r0-cycle25-parallel-disjoint-lean-opaque
+    path: whitepapers/2026-05/provability_holes/prov-r0-cycle25-parallel-disjoint-lean-opaque
+    title: "Proof holes — cycle 25 (G-par disjoint Lean opaque stubs)"
+    agent: proof_gap_researcher
+    run_id: proof_gap_researcher-2026-05-30-parallel-disjoint-lean-opaque
+    generated_at: "2026-05-30T12:45:00Z"
+    domains: [ecosystem, scientific_computing]
+    validity_grade: B
+    status: active
+    markdown_path: whitepapers/2026-05/provability_holes/prov-r0-cycle25-parallel-disjoint-lean-opaque/README.md
+    artifacts_path: whitepapers/2026-05/provability_holes/prov-r0-cycle25-parallel-disjoint-lean-opaque/artifacts.json
   - goal_id: provability_holes
     slug: prov-r0-cycle3-disjoint-row-policy-gap
     path: whitepapers/2026-05/provability_holes/prov-r0-cycle3-disjoint-row-policy-gap
