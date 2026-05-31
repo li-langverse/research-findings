@@ -1,6 +1,6 @@
-# research-findings
+﻿# research-findings
 
-Goal-directed research **whitepapers** for the Li langverse — executive summaries, analysis, code snippets, and machine-readable metadata for dashboards and quick scanning.
+Goal-directed research **whitepapers** for the Li langverse â€” executive summaries, analysis, code snippets, and machine-readable metadata for dashboards and quick scanning.
 
 ## Layout
 
@@ -8,7 +8,7 @@ Goal-directed research **whitepapers** for the Li langverse — executive summar
 whitepapers/YYYY-MM/<goal-id>/<slug>/
   README.md          # whitepaper body (YAML frontmatter + narrative)
   artifacts.json     # goal_id, agent, run_id, domains, validity_grade, links
-  snippets/          # referenced code blocks (.li, .py, .md, …)
+  snippets/          # referenced code blocks (.li, .py, .md, â€¦)
 index.yaml           # catalog (rebuilt by script)
 SCAN.md              # one-page human scan table (rebuilt by script)
 templates/
@@ -34,3 +34,7 @@ cd ../li-cursor-agents
 ## Lic pointer
 
 `lic/docs/ecosystem/research-findings.md` documents the sibling repo path for humans browsing from **lic**.
+
+## License
+
+Copyright (C) 2026 Julian. Licensed under the [GNU General Public License v3.0](LICENSE).
